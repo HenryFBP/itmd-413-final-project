@@ -2,7 +2,11 @@ from tkinter import *
 import pygubu
 
 class Application:
-    def __init__(self, master, path="./gui.ui"):
+    def __init__(self, master, path="./gui_pygubu.ui"):
+
+        callbacks = {
+            ''
+        }
 
         #1: Create a builder
         self.builder = builder = pygubu.Builder()
