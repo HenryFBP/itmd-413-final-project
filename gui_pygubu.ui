@@ -1,72 +1,119 @@
 <?xml version='1.0' encoding='utf-8'?>
 <interface>
-  <object class="ttk.Frame" id="mainwindow">
-    <property name="height">200</property>
-    <property name="width">200</property>
-    <layout>
-      <property name="column">0</property>
-      <property name="propagate">True</property>
-      <property name="row">0</property>
-      <property name="sticky">w</property>
-      <rows>
-        <row id="0">
-          <property name="minsize">0</property>
-          <property name="weight">0</property>
-        </row>
-      </rows>
-    </layout>
+  <object class="tk.Toplevel" id="mainwindow">
+    <property name="borderwidth">5</property>
+    <property name="container">false</property>
+    <property name="height">500</property>
+    <property name="minsize">500|500</property>
+    <property name="padx">2</property>
+    <property name="pady">2</property>
+    <property name="resizable">both</property>
+    <property name="takefocus">false</property>
+    <property name="title" translatable="yes">hi</property>
+    <property name="width">500</property>
     <child>
-      <object class="ttk.Frame" id="buttons">
-        <property name="height">200</property>
-        <property name="width">200</property>
+      <object class="ttk.Frame" id="Frame_root">
+        <property name="height">500</property>
+        <property name="width">500</property>
         <layout>
           <property name="column">0</property>
-          <property name="propagate">True</property>
-          <property name="row">4</property>
+          <property name="propagate">False</property>
+          <property name="row">0</property>
+          <property name="sticky">nsew</property>
+          <rows>
+            <row id="0">
+              <property name="weight">1</property>
+            </row>
+          </rows>
+          <columns>
+            <column id="0">
+              <property name="weight">1</property>
+            </column>
+          </columns>
         </layout>
         <child>
-          <object class="ttk.Button" id="buttonImport">
-            <property name="text" translatable="yes">Import</property>
+          <object class="ttk.Panedwindow" id="Panedwindow_root">
+            <property name="height">200</property>
+            <property name="orient">horizontal</property>
+            <property name="width">200</property>
             <layout>
               <property name="column">0</property>
               <property name="propagate">True</property>
               <property name="row">0</property>
+              <property name="sticky">nsew</property>
             </layout>
+            <child>
+              <object class="ttk.Panedwindow.Pane" id="Pane_inventory">
+                <property name="weight">0</property>
+                <child>
+                  <object class="ttk.Labelframe" id="Labelframe_inventory">
+                    <property name="height">200</property>
+                    <property name="text" translatable="yes">Inventory</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">True</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nsew</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Panedwindow" id="Panedwindow_inventoryList">
+                        <property name="height">200</property>
+                        <property name="orient">vertical</property>
+                        <property name="width">200</property>
+                        <layout>
+                          <property name="propagate">True</property>
+                          <property name="sticky">nsew</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Panedwindow.Pane" id="Pane_play">
+                <child>
+                  <object class="ttk.Frame" id="Frame_play">
+                    <property name="height">200</property>
+                    <property name="width">200</property>
+                    <layout>
+                      <property name="column">0</property>
+                      <property name="propagate">False</property>
+                      <property name="row">0</property>
+                      <property name="sticky">nsew</property>
+                    </layout>
+                    <child>
+                      <object class="ttk.Button" id="button_play">
+                        <property name="command">on_play_button_click</property>
+                        <property name="default">normal</property>
+                        <property name="text" translatable="yes">Play!</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">0</property>
+                          <property name="sticky">s</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Button" id="button_quit">
+                        <property name="command">on_quit_button_click</property>
+                        <property name="default">normal</property>
+                        <property name="text" translatable="yes">Quit!</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">1</property>
+                        </layout>
+                      </object>
+                    </child>
+                  </object>
+                </child>
+              </object>
+            </child>
           </object>
         </child>
-        <child>
-          <object class="ttk.Button" id="Button_2">
-            <property name="text" translatable="yes">Button_2</property>
-            <layout>
-              <property name="column">0</property>
-              <property name="propagate">True</property>
-              <property name="row">1</property>
-            </layout>
-          </object>
-        </child>
-        <child>
-          <object class="ttk.Button" id="buttonExit">
-            <property name="text" translatable="yes">Exit</property>
-            <property name="underline">0</property>
-            <bind add="True" handler="callback" sequence="&lt;1&gt;" />
-            <layout>
-              <property name="column">0</property>
-              <property name="propagate">True</property>
-              <property name="row">2</property>
-            </layout>
-          </object>
-        </child>
-      </object>
-    </child>
-    <child>
-      <object class="ttk.Frame" id="status">
-        <property name="height">200</property>
-        <property name="width">200</property>
-        <layout>
-          <property name="column">0</property>
-          <property name="propagate">True</property>
-          <property name="row">5</property>
-        </layout>
       </object>
     </child>
   </object>
