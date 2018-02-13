@@ -39,10 +39,10 @@ class Application:
         # make a frame for the text + image
         itemFrame = Frame(self.inventory, bd=2, relief=SUNKEN, background=("#" + random_hex_string()))
 
-        itemName = Label(itemFrame, text=f"item {1}").pack()
+        # give it a label
+        itemName = Label(itemFrame, text=f"item {len(self.inventory.children)}").pack()
 
         itemFrame.pack()
-
         self.inventory.add(itemFrame)
 
     def __init__(self, master, path="./gui_pygubu.ui"):
