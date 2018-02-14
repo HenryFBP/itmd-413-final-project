@@ -1,3 +1,5 @@
+import random
+
 hex_digits = "0123456789ABCDEF"
 
 
