@@ -1,7 +1,10 @@
 import random
+import LootItem
 
 hex_digits = "0123456789ABCDEF"
 
+def randomLootItem() -> LootItem:
+    return "potatoes"
 
 def random_hex_digit():
     """
