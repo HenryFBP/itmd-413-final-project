@@ -10,8 +10,6 @@ class LootItem:
     name = "Loot Item"
     rarity = 0.5
 
-    def __init__(self):
-        return
-
-    def __init__(self, name):
+    def __init__(self, name, rarity):
         self.name = name
+        self.rarity = rarity
