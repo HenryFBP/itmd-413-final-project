@@ -10,16 +10,32 @@ class Application:
     def on_play_button_click(self):
         itemFrame = GuiLootItem.item_to_frame(randomLootItem(), self.inventory)
 
+        itemFrameRow = (len(self.inventory.children) if isinstance(len(self.inventory.children), int) else 0)
+
+        itemFrame.grid(row=itemFrameRow, sticky=NSEW)
+
         itemFrame.pack()
 
         self.inventory.add(itemFrame)
 
     def __init__(self, master, path="./gui_pygubu.ui"):
+        # make list of functions inside ``Application`` class.
+        methods = [func for func in dir(Application) if (  # for ALL props of Application class, and add them IF
+            callable(getattr(Application, func)) and  # if it is callable
+            func.startswith("on_")  # if it starts with ``on_``.
+        )]
+
+        # print("Methods:")
+        # print(methods)
+
         # configure callbacks
-        callbacks = {
-            'on_quit_button_click': self.on_quit_button_click,
-            'on_play_button_click': self.on_play_button_click,
-        }
+        callbacks = {}
+
+        for func in methods:
+            callbacks[func] = getattr(self, func)
+
+        # print("Callbacks:")
+        # print(callbacks)
 
         # 1: Create a builder
         self.builder = pygubu.Builder()
