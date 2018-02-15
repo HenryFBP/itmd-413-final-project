@@ -1,22 +1,30 @@
-import pygubu
+from pygubu import *
 
 from GuiLootItem import *
 
 
+def parent(w: Widget):
+    """
+    :param w: The child widget.
+    :return: The parent of widget ``w``.
+    """
+    return w.nametowidget(name=w.winfo_parent())
+
+
 class Application:
-    def on_quit_button_click(self):
+    def on_horizontal_scroll(self: Scrollbar, event: Event):
+        print("Horiz scroll?")
+        x = self.get()
+
+    def on_quit_button_click(self: Tk):
         self.mainwindow.quit()
 
-    def on_play_button_click(self):
+    def on_play_button_click(self: Tk):
         itemFrame = GuiLootItem.item_to_frame(randomLootItem(), self.inventory)
 
         itemFrameRow = (len(self.inventory.children) if isinstance(len(self.inventory.children), int) else 0)
 
         itemFrame.grid(row=itemFrameRow, sticky=NSEW)
-
-        itemFrame.pack()
-
-        self.inventory.add(itemFrame)
 
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
@@ -25,8 +33,8 @@ class Application:
             func.startswith("on_")  # if it starts with ``on_``.
         )]
 
-        # print("Methods:")
-        # print(methods)
+        print("Methods:")
+        print(repr(methods) + "\n")
 
         # configure callbacks
         callbacks = {}
@@ -37,11 +45,11 @@ class Application:
         for func in methods:
             callbacks[func] = getattr(self, func)
 
-        # print("Callbacks:")
-        # print(callbacks)
+        print("Callbacks:")
+        print(repr(callbacks).replace(',',',\n') + "\n")
 
         # 1: Create a builder
-        self.builder = pygubu.Builder()
+        self.builder = Builder()
 
         # 2: Load an ui file
         self.builder.add_from_file(path)
@@ -50,10 +58,18 @@ class Application:
         self.mainwindow: Toplevel = self.builder.get_object('mainwindow', master)
 
         # Get inventory pane to add stuff to
-        self.inventory: PanedWindow = self.builder.get_object('Panedwindow_inventoryList', master)
+        self.inventory: Frame = self.builder.get_object('Frame_inventory', master)
+
+        # get scrollbar to register horizontal scroll event
+        self.inventoryScroll: Scrollbar = parent(self.inventory)
+
+        # self.inventoryScroll.bin
 
         # connect method callbacks
-        self.builder.connect_callbacks(callbacks)
+        unconnected = self.builder.connect_callbacks(callbacks)
+
+        print("Unconnected callbacks:")
+        print(repr(unconnected) + "\n")
 
 
 if __name__ == '__main__':

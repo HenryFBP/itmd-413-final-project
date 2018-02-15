@@ -47,25 +47,143 @@
                 <property name="weight">0</property>
                 <child>
                   <object class="ttk.Labelframe" id="Labelframe_inventory">
-                    <property name="height">200</property>
+                    <property name="cursor">arrow</property>
+                    <property name="labelanchor">n</property>
                     <property name="text" translatable="yes">Inventory</property>
                     <property name="width">200</property>
                     <layout>
                       <property name="column">0</property>
-                      <property name="propagate">False</property>
+                      <property name="columnspan">2</property>
+                      <property name="propagate">True</property>
                       <property name="row">0</property>
-                      <property name="sticky">s</property>
+                      <property name="sticky">nsew</property>
+                      <rows>
+                        <row id="0">
+                          <property name="weight">1</property>
+                        </row>
+                      </rows>
+                      <columns>
+                        <column id="0">
+                          <property name="weight">1</property>
+                        </column>
+                        <column id="1">
+                          <property name="weight">0</property>
+                        </column>
+                      </columns>
                     </layout>
                     <child>
-                      <object class="ttk.Panedwindow" id="Panedwindow_inventoryList">
-                        <property name="orient">vertical</property>
-                        <property name="width">200</property>
+                      <object class="pygubu.builder.widgets.scrolledframe" id="Scrolledframe_inventory">
+                        <property name="scrolltype">both</property>
+                        <property name="usemousewheel">true</property>
+                        <bind add="True" handler="on_horizontal_scroll" sequence="Shift-MouseWheel" />
                         <layout>
-                          <property name="columnspan">2</property>
+                          <property name="column">0</property>
                           <property name="propagate">True</property>
-                          <property name="rowspan">2</property>
-                          <property name="sticky">ns</property>
+                          <property name="row">0</property>
+                          <property name="sticky">nsew</property>
+                          <rows>
+                            <row id="0">
+                              <property name="weight">1</property>
+                            </row>
+                            <row id="1">
+                              <property name="weight">0</property>
+                            </row>
+                          </rows>
+                          <columns>
+                            <column id="0">
+                              <property name="weight">1</property>
+                            </column>
+                          </columns>
                         </layout>
+                        <child>
+                          <object class="ttk.Frame" id="Frame_inventory">
+                            <property name="height">200</property>
+                            <property name="width">200</property>
+                            <layout>
+                              <property name="column">0</property>
+                              <property name="columnspan">2</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                              <property name="sticky">nsew</property>
+                              <rows>
+                                <row id="0">
+                                  <property name="weight">0</property>
+                                </row>
+                                <row id="1">
+                                  <property name="weight">0</property>
+                                </row>
+                              </rows>
+                              <columns>
+                                <column id="0">
+                                  <property name="weight">1</property>
+                                </column>
+                              </columns>
+                            </layout>
+                            <child>
+                              <object class="ttk.Frame" id="Frame_5">
+                                <property name="borderwidth">3</property>
+                                <property name="height">200</property>
+                                <property name="relief">raised</property>
+                                <property name="width">200</property>
+                                <layout>
+                                  <property name="column">0</property>
+                                  <property name="propagate">True</property>
+                                  <property name="row">1</property>
+                                  <property name="sticky">ew</property>
+                                </layout>
+                                <child>
+                                  <object class="ttk.Label" id="label2">
+                                    <property name="background">#82f948</property>
+                                    <property name="takefocus">false</property>
+                                    <property name="text" translatable="yes">test label BUT LONGER</property>
+                                    <layout>
+                                      <property name="column">0</property>
+                                      <property name="propagate">True</property>
+                                      <property name="row">0</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="ttk.Frame" id="Frame_4">
+                                <property name="borderwidth">3</property>
+                                <property name="height">200</property>
+                                <property name="relief">raised</property>
+                                <property name="width">200</property>
+                                <layout>
+                                  <property name="column">0</property>
+                                  <property name="propagate">True</property>
+                                  <property name="row">2</property>
+                                  <property name="sticky">ew</property>
+                                  <rows>
+                                    <row id="0">
+                                      <property name="weight">0</property>
+                                    </row>
+                                  </rows>
+                                  <columns>
+                                    <column id="0">
+                                      <property name="weight">0</property>
+                                    </column>
+                                  </columns>
+                                </layout>
+                                <child>
+                                  <object class="ttk.Label" id="label">
+                                    <property name="background">#b964dd</property>
+                                    <property name="justify">center</property>
+                                    <property name="text" translatable="yes">test item</property>
+                                    <layout>
+                                      <property name="column">0</property>
+                                      <property name="propagate">True</property>
+                                      <property name="row">0</property>
+                                      <property name="sticky">ew</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
+                          </object>
+                        </child>
                       </object>
                     </child>
                   </object>
