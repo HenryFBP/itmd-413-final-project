@@ -29,7 +29,7 @@ def random_hex_digit():
     Example:
     r_h_d() -> "E"
     """
-    return hex_digits[random.randrange(0, len(hex_digits))]
+    return random_item(hex_digits)
 
 
 def random_hex_string(l=6):
@@ -41,7 +41,4 @@ def random_hex_string(l=6):
     r_h_s(l=3) -> "A0E"
     r_h_s(l=1) -> "F"
     """
-    s = ""
-    for i in range(l):
-        s += random_hex_digit()
-    return s
+    return ''.join([random_hex_digit() for i in range(l)])
