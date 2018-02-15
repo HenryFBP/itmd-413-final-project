@@ -31,6 +31,9 @@ class Application:
         # configure callbacks
         callbacks = {}
 
+        # this is easier than doing:
+        # callbacks = {"on_thing" : on_thing_function,
+        #              "on_ding" : on_ding_function ...}
         for func in methods:
             callbacks[func] = getattr(self, func)
 
