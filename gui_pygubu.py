@@ -1,8 +1,6 @@
-import random
-from tkinter import *
-from guiLib import *
-
 import pygubu
+
+from GuiLootItem import *
 
 
 class Application:
@@ -10,13 +8,10 @@ class Application:
         self.mainwindow.quit()
 
     def on_play_button_click(self):
-        # make a frame for the text + image
-        itemFrame = Frame(self.inventory, bd=2, relief=SUNKEN, background=("#" + random_hex_string()))
-
-        # give it a label
-        itemName = Label(itemFrame, text=f"item {len(self.inventory.children)}").pack()
+        itemFrame = GuiLootItem.item_to_frame(randomLootItem(), self.inventory)
 
         itemFrame.pack()
+
         self.inventory.add(itemFrame)
 
     def __init__(self, master, path="./gui_pygubu.ui"):
