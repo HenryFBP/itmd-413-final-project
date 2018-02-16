@@ -1,3 +1,5 @@
+import numpy as np
+
 from guiLib import *
 
 
@@ -35,9 +37,12 @@ class LootCrate:
         :return: A list of ``LootItem`` objects.
         """
 
-        weights = [item.rarity for item in self.pool]
+        weights = [item.rarity for item in self.pool] # does not sum to one
 
-        items = random.choices(self.pool, weights, k=self.capacity)
+        normalizedWeights = np.array(weights)
+        normalizedWeights /= normalizedWeights.sum() # this does
+
+        items = np.random.choice(self.pool, self.capacity, replace=False, p=normalizedWeights)
 
         return items
 
