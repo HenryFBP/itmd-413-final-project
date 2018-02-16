@@ -7,9 +7,25 @@ class LootItem:
         rarity : float  The weight to be multiplied into the chance that this item will be selected.
     """
 
-    name = "Loot Item"
-    rarity = 0.5
+    name: str = "Loot Item"
+    rarity: float = 0.5
 
-    def __init__(self, name, rarity):
+    # array = [1,2,3,4,"hi mom!"]
+
+    def __init__(self, name: str, rarity: float):
+        """
+        Make a new `LootItem`.
+
+        :param name The name of the `LootItem`.
+        :param rarity The weight to be multiplied into the chance that this item will be selected.
+        """
         self.name = name
-        self.rarity = rarity
+        self.rarity = float(rarity)
+
+        return
+
+    def __str__(self):
+        return f"[{self.rarity:.2}]: {self.name}"
+
+    def __repr__(self):
+        return str(self)
