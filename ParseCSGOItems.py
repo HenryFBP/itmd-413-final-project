@@ -1,20 +1,28 @@
 import json
+from pprint import *
 
-from LootItem import *
+from guiLib import *
 
 
 class CSGOParser:
+    """
+    A class that parses CS:GO JSON item/loot dumps.
+    """
     dictionary = None
     rarities = None
     jitems = None
     items = []
+    verbose = False
 
-    def __init__(self, filepath: str):
+    def __init__(self, filepath: str, verbose=False):
         """
         Initialize ``self`` with JSON data located at ``filepath``.
 
         :param filepath: The location of the JSON datafile.
+        :param verbose: Should we be verbose?
         """
+        self.verbose = verbose
+
         dictionary = self.parse(filepath)
 
         self.dictionary = dictionary
@@ -22,8 +30,8 @@ class CSGOParser:
         self.qualities = dictionary["qualities"]
         self.jitems = dictionary["items"]
 
-        # print("Items:")
-        # pprint(self.jitems)
+        printif("Items:", self.verbose)
+        if self.verbose: pprint(self.jitems)
 
         # go through all JSON objects
         for item_id in self.jitems:
@@ -67,10 +75,10 @@ class CSGOParser:
             total = self.total_qualities()
             percent = 1 / weight
 
-            # print(f"Quality: higher weight means LOWER chance.")
-            # print(f"{weight} weight, {total} total.")
-            # print("1 / weight = percent")
-            # print(f"{1} / {weight} = {percent}")
+            printif(f"Quality: higher weight means LOWER chance.", self.verbose)
+            printif(f"{weight} weight, {total} total.", self.verbose)
+            printif("1 / weight = percent", self.verbose)
+            printif(f"{1} / {weight} = {percent}", self.verbose)
 
         # higher weight means larger chance
         elif "item_rarity" in jitem:
@@ -95,7 +103,7 @@ class CSGOParser:
 
         for rarity in self.rarities:
             if "weight" in self.rarities[rarity]:
-                print(f"Rarity {rarity} is {self.rarities[rarity]['weight']}")
+                printif(f"Rarity {rarity} is {self.rarities[rarity]['weight']}", self.verbose)
                 total += int(self.rarities[rarity]["weight"])
 
         # print(f"Total rarities: {total}")
@@ -111,7 +119,7 @@ class CSGOParser:
 
         for quality in self.qualities:
             if "weight" in self.qualities[quality]:
-                # print(f"Quality {quality} is {self.qualities[quality]['weight']}")
+                printif(f"Quality {quality} is {self.qualities[quality]['weight']}", self.verbose)
                 total += int(self.qualities[quality]["weight"])
 
         # print(f"Total qualities: {total}")
@@ -191,10 +199,17 @@ class CSGOParser:
         file = open(filepath)
         json_data = json.load(file)
 
-        # pprint(json_data)
+        if self.verbose: pprint(json_data)
 
         return json_data
 
 
+def test():
+    """
+    Test out the functionality of our ``CSGOParser`` class.
+    """
+    csgo = CSGOParser("_data/items_game_CSGO.json", verbose=True)
+
+
 if __name__ == '__main__':
-    csgo = CSGOParser("_data/items_game_CSGO.json")
+    test()

@@ -1,8 +1,8 @@
 class LootItem:
-    """    A class representing a loot item that can come from a loot crate.
+    """
+    A class representing a loot item that can come from a loot crate.
 
     Attributes
-    ----------
         name : str      The name of the item.
         rarity : float  The weight to be multiplied into the chance that this item will be selected.
     """
@@ -25,7 +25,7 @@ class LootItem:
         return
 
     def __str__(self):
-        return f"[{self.rarity:.2}]: {self.name}"
+        return f"[{self.rarity*100:.8}%]: {self.name}"
 
     def __repr__(self):
         return str(self)

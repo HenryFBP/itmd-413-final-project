@@ -11,6 +11,14 @@ attrs = ["justice", "evil", "zits", "pastries", "noodle-osity", "helplessness", 
 
 
 def printif(*thing, b=False):
+    """
+    Print ``thing`` if ``b`` is true
+
+    :param thing: The thing.
+    :param b: The condition.
+
+    :return: None
+    """
     if (b):
         print(*thing)
 
