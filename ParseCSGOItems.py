@@ -1,7 +1,5 @@
 import json
-from pprint import *
 
-from guiLib import *
 from LootItem import *
 
 
@@ -14,6 +12,8 @@ class CSGOParser:
     def __init__(self, filepath: str):
         """
         Initialize ``self`` with JSON data located at ``filepath``.
+
+        :param filepath: The location of the JSON datafile.
         """
         dictionary = self.parse(filepath)
 
@@ -38,8 +38,10 @@ class CSGOParser:
     def item_weight(self, jitem: dict) -> int:
         """
         Get the weight for a JSON item.
+
         :param jitem: A JSON item.
         :return: The weight associated with this item.
+
         Large weights are more common, small weights are less common.
         """
         if "item_quality" in jitem:
@@ -52,6 +54,7 @@ class CSGOParser:
     def item_percent(self, jitem: dict) -> float:
         """
         Get the percent for a JSON item.
+
         :param jitem: A JSON item.
         :return: The percentage chance to get with this item.
         """
@@ -84,6 +87,8 @@ class CSGOParser:
 
     def total_rarities(self) -> int:
         """
+        Get all rarity weights summed up.
+
         :return: The sum of all weight values for all rarities.
         """
         total = 0
@@ -98,6 +103,8 @@ class CSGOParser:
 
     def total_qualities(self) -> int:
         """
+        Get all quality weights summed up.
+
         :return: The sum of all weight values for all qualities.
         """
         total = 0
@@ -116,6 +123,7 @@ class CSGOParser:
 
         :param rarity: The string representing a rarity.
         :return: The weight associated with the string.
+
         Example:\n
         ``rarity_to_weight("common") -> 10000000``\n
         ``rarity_to_weight("mythical") -> 80000``\n
@@ -134,6 +142,7 @@ class CSGOParser:
 
         :param rarity: The string representing a quality.
         :return: The weight associated with the string.
+
         Example:\n
         ``quality_to_weight("normal") -> 0``\n
         ``quality_to_weight("genuine") -> 30``\n

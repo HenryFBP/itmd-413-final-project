@@ -16,11 +16,19 @@ def printif(*thing, b=False):
 
 
 def random_item(list):
-    """:return: Return a random item in list ``list`` between ``0`` and ``len(list)``. """
+    """
+    Randomly select an element from ``list``.
+
+    :return: Return a random item in list ``list`` between ``0`` and ``len(list)``.
+    """
     return list[random.randrange(0, len(list))]
 
 
 def randomLootItem() -> LootItem:
+    """
+    Generate a random ``LootItem`` object.
+    :return: A random ``LootItem``.
+    """
     name = f"{random_item(modifiers)} {random_item(types)} {random_item(conjs)} {random_item(attrs)}"
     rarity = random.uniform(0, 1)
 
