@@ -35,6 +35,7 @@ def random_item(list):
 def randomLootItem() -> LootItem:
     """
     Generate a random ``LootItem`` object.
+
     :return: A random ``LootItem``.
     """
     name = f"{random_item(modifiers)} {random_item(types)} {random_item(conjs)} {random_item(attrs)}"

@@ -10,7 +10,7 @@ class GuiLootItem:
 
     def item_to_frame(item: LootItem, parent) -> Frame:
         """
-        :return: ``item`` as a tkinter Frame object.
+        :return: ``item`` as a ``tkinter`` ``Frame`` object.
         """
 
         frame = Frame(parent, bd=2, relief=SUNKEN, background=("#" + random_hex_string()))

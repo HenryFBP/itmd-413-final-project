@@ -19,7 +19,7 @@ class CSGOParser:
         Initialize ``self`` with JSON data located at ``filepath``.
 
         :param filepath: The location of the JSON datafile.
-        :param verbose: Should we be verbose?
+        :param verbose: Should we print everything?
         """
         self.verbose = verbose
 
