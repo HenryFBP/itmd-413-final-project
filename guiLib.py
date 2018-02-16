@@ -10,8 +10,13 @@ conjs = ["of", "in", "with", "without", "having", "derived from", "inside of", "
 attrs = ["justice", "evil", "zits", "pastries", "noodle-osity", "helplessness", "body odor"]
 
 
+def printif(*thing, b=False):
+    if (b):
+        print(*thing)
+
+
 def random_item(list):
-    """Return a random item in list ``list`` between ``0`` and ``len(list)``. """
+    """:return: Return a random item in list ``list`` between ``0`` and ``len(list)``. """
     return list[random.randrange(0, len(list))]
 
 
@@ -25,9 +30,11 @@ def randomLootItem() -> LootItem:
 def random_hex_digit():
     """
     Return a random single-digit hex string.
+
     :return: The hex string.
+
     Example:
-    r_h_d() -> "E"
+    ``random_hex_digit() -> "E"``
     """
     return random_item(hex_digits)
 
@@ -35,10 +42,12 @@ def random_hex_digit():
 def random_hex_string(l=6):
     """
     Return a random hex color string.
+
     :param l: How long the hex string will be.
     :return: The hex string.
+
     Example:
-    r_h_s(l=3) -> "A0E"
-    r_h_s(l=1) -> "F"
+    ``random_hex_string(l=3) -> "A0E"``
+    ``random_hex_string(l=1) -> "F"``
     """
     return ''.join([random_hex_digit() for i in range(l)])
