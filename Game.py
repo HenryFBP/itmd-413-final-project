@@ -7,9 +7,9 @@ class Game:
 
     - LootCrate objects
         - Registering LootCrate objects
-        - Deciding what pool a LootCrate object will contain
+        - Deciding what items a LootCrate object will contain
 
-    - Having a master list of all pool
+    - Having a master list of all items
         - Indexing an item by an attribute (name, rarity, etc)
     """
 
