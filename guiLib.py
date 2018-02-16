@@ -124,8 +124,7 @@ def generate_all_URLs():
     generate_URL_file(generate_URLS("https://csgostash.com/img/skins/large_1920/s"), name="skins")
     generate_URL_file(generate_URLS("https://csgostash.com/img/containers/c"), name="containers")
 
-
-if __name__ == "__main__":
+def main():
     """
     Interactive function-list REPL for doing various maintenance tasks.
     """
@@ -145,3 +144,7 @@ if __name__ == "__main__":
             callbacks[inp]()  # call what they specify
         else:
             print(f"'{inp}' not in callback list!")
+
+
+if __name__ == "__main__":
+    main()
