@@ -320,7 +320,7 @@
                       <object class="ttk.Button" id="button_quit">
                         <property name="command">on_quit_button_click</property>
                         <property name="default">normal</property>
-                        <property name="text" translatable="yes">Quit!</property>
+                        <property name="text" translatable="yes">Quit</property>
                         <layout>
                           <property name="column">3</property>
                           <property name="pady">20</property>
@@ -363,7 +363,7 @@
                     </child>
                     <child>
                       <object class="ttk.Button" id="Five">
-                        <property name="text" translatable="yes">Preload $5.00</property>
+                        <property name="text" translatable="yes">Preload 500 KCoin</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
@@ -374,7 +374,7 @@
                     </child>
                     <child>
                       <object class="ttk.Button" id="Ten">
-                        <property name="text" translatable="yes">Preload $10.00</property>
+                        <property name="text" translatable="yes">Preload 1000 KCoin</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
@@ -385,7 +385,7 @@
                     </child>
                     <child>
                       <object class="ttk.Button" id="Twenty">
-                        <property name="text" translatable="yes">Preload $20.00</property>
+                        <property name="text" translatable="yes">Preload 2000 KCoin</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
@@ -396,7 +396,7 @@
                     </child>
                     <child>
                       <object class="ttk.Button" id="Fiddy">
-                        <property name="text" translatable="yes">Preload $50.00</property>
+                        <property name="text" translatable="yes">Preload 5000 KCoin</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
@@ -407,7 +407,7 @@
                     </child>
                     <child>
                       <object class="ttk.Button" id="Ben">
-                        <property name="text" translatable="yes">Preload $100.00</property>
+                        <property name="text" translatable="yes">Preload 10000 KCoin</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
@@ -418,12 +418,22 @@
                     </child>
                     <child>
                       <object class="ttk.Button" id="Gran">
-                        <property name="text" translatable="yes">Preload $1000.00</property>
+                        <property name="text" translatable="yes">Preload 100000 KCoin</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
                           <property name="row">11</property>
                           <property name="sticky">ew</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Button" id="graph">
+                        <property name="text" translatable="yes">Track Earnings</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">14</property>
                         </layout>
                       </object>
                     </child>
