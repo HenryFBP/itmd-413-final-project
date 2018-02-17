@@ -124,6 +124,12 @@ def generate_all_URLs():
     generate_URL_file(generate_URLS("https://csgostash.com/img/skins/large_1920/s"), name="skins")
     generate_URL_file(generate_URLS("https://csgostash.com/img/containers/c"), name="containers")
 
+def download_all_files(dir: str = "_data/icon_URLs"):
+    """
+    Download all files pointed to by text files inside of directory ``dir``.
+    """
+    pass
+
 def main():
     """
     Interactive function-list REPL for doing various maintenance tasks.
