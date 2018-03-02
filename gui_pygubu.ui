@@ -306,6 +306,7 @@
                     <child>
                       <object class="ttk.Button" id="button_play">
                         <property name="command">on_play_button_click</property>
+                        <property name="cursor">arrow</property>
                         <property name="default">normal</property>
                         <property name="text" translatable="yes">Play!</property>
                         <layout>
@@ -313,20 +314,6 @@
                           <property name="propagate">True</property>
                           <property name="row">0</property>
                           <property name="sticky">ew</property>
-                        </layout>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="ttk.Button" id="button_quit">
-                        <property name="command">on_quit_button_click</property>
-                        <property name="default">normal</property>
-                        <property name="text" translatable="yes">Quit</property>
-                        <layout>
-                          <property name="column">3</property>
-                          <property name="pady">20</property>
-                          <property name="propagate">True</property>
-                          <property name="row">14</property>
-                          <property name="sticky">sew</property>
                         </layout>
                       </object>
                     </child>
@@ -349,91 +336,126 @@
                       </object>
                     </child>
                     <child>
-                      <object class="ttk.Label" id="player_bal">
-                        <property name="text" translatable="yes">Your Balance: </property>
-                        <layout>
-                          <property name="column">0</property>
-                          <property name="padx">50</property>
-                          <property name="pady">5</property>
-                          <property name="propagate">True</property>
-                          <property name="row">5</property>
-                          <property name="sticky">e</property>
-                        </layout>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="ttk.Button" id="Five">
-                        <property name="text" translatable="yes">Preload 500 KCoin</property>
+                      <object class="ttk.Frame" id="Frame_money">
+                        <property name="height">200</property>
+                        <property name="width">200</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
                           <property name="row">6</property>
                           <property name="sticky">ew</property>
+                          <columns>
+                            <column id="3">
+                              <property name="weight">1</property>
+                            </column>
+                          </columns>
                         </layout>
+                        <child>
+                          <object class="ttk.Entry" id="Entry_creds">
+                            <property name="takefocus">false</property>
+                            <property name="text" translatable="yes">100</property>
+                            <property name="width">11</property>
+                            <layout>
+                              <property name="column">0</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="Label_1">
+                            <property name="text" translatable="yes">creds =</property>
+                            <layout>
+                              <property name="column">1</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Button" id="button_buy">
+                            <property name="compound">top</property>
+                            <property name="text" translatable="yes">Buy!</property>
+                            <property name="width">4</property>
+                            <layout>
+                              <property name="column">3</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                              <property name="sticky">e</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Label" id="Label_creds_to_money">
+                            <property name="borderwidth">2</property>
+                            <property name="relief">raised</property>
+                            <property name="text" translatable="yes">10$</property>
+                            <layout>
+                              <property name="column">2</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                            </layout>
+                          </object>
+                        </child>
                       </object>
                     </child>
                     <child>
-                      <object class="ttk.Button" id="Ten">
-                        <property name="text" translatable="yes">Preload 1000 KCoin</property>
+                      <object class="ttk.Frame" id="Frame_balance">
+                        <property name="height">200</property>
+                        <property name="width">200</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
                           <property name="row">7</property>
                           <property name="sticky">ew</property>
                         </layout>
+                        <child>
+                          <object class="ttk.Label" id="player_bal">
+                            <property name="takefocus">false</property>
+                            <property name="text" translatable="yes">Your Balance: </property>
+                            <layout>
+                              <property name="column">0</property>
+                              <property name="pady">5</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                            </layout>
+                          </object>
+                        </child>
+                        <child>
+                          <object class="ttk.Entry" id="entry_balance">
+                            <property name="state">readonly</property>
+                            <property name="text" translatable="yes">???</property>
+                            <layout>
+                              <property name="column">1</property>
+                              <property name="propagate">True</property>
+                              <property name="row">0</property>
+                              <property name="sticky">ew</property>
+                            </layout>
+                          </object>
+                        </child>
                       </object>
                     </child>
                     <child>
-                      <object class="ttk.Button" id="Twenty">
-                        <property name="text" translatable="yes">Preload 2000 KCoin</property>
-                        <layout>
-                          <property name="column">0</property>
-                          <property name="propagate">True</property>
-                          <property name="row">8</property>
-                          <property name="sticky">ew</property>
-                        </layout>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="ttk.Button" id="Fiddy">
-                        <property name="text" translatable="yes">Preload 5000 KCoin</property>
-                        <layout>
-                          <property name="column">0</property>
-                          <property name="propagate">True</property>
-                          <property name="row">9</property>
-                          <property name="sticky">ew</property>
-                        </layout>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="ttk.Button" id="Ben">
-                        <property name="text" translatable="yes">Preload 10000 KCoin</property>
-                        <layout>
-                          <property name="column">0</property>
-                          <property name="propagate">True</property>
-                          <property name="row">10</property>
-                          <property name="sticky">ew</property>
-                        </layout>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="ttk.Button" id="Gran">
-                        <property name="text" translatable="yes">Preload 100000 KCoin</property>
-                        <layout>
-                          <property name="column">0</property>
-                          <property name="propagate">True</property>
-                          <property name="row">11</property>
-                          <property name="sticky">ew</property>
-                        </layout>
-                      </object>
-                    </child>
-                    <child>
-                      <object class="ttk.Button" id="graph">
+                      <object class="ttk.Button" id="button_graph">
                         <property name="text" translatable="yes">Track Earnings</property>
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
-                          <property name="row">14</property>
+                          <property name="row">16</property>
+                          <property name="sticky">ew</property>
+                        </layout>
+                      </object>
+                    </child>
+                    <child>
+                      <object class="ttk.Button" id="button_quit">
+                        <property name="command">on_quit_button_click</property>
+                        <property name="default">normal</property>
+                        <property name="text" translatable="yes">Quit</property>
+                        <layout>
+                          <property name="column">0</property>
+                          <property name="propagate">True</property>
+                          <property name="row">17</property>
+                          <property name="sticky">sew</property>
                         </layout>
                       </object>
                     </child>
