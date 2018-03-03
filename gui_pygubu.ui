@@ -290,6 +290,12 @@
                         <row id="0">
                           <property name="weight">0</property>
                         </row>
+                        <row id="16">
+                          <property name="weight">0</property>
+                        </row>
+                        <row id="17">
+                          <property name="weight">1</property>
+                        </row>
                         <row id="2">
                           <property name="weight">0</property>
                         </row>
@@ -441,8 +447,8 @@
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
-                          <property name="row">16</property>
-                          <property name="sticky">ew</property>
+                          <property name="row">8</property>
+                          <property name="sticky">sew</property>
                         </layout>
                       </object>
                     </child>
@@ -454,7 +460,7 @@
                         <layout>
                           <property name="column">0</property>
                           <property name="propagate">True</property>
-                          <property name="row">17</property>
+                          <property name="row">9</property>
                           <property name="sticky">sew</property>
                         </layout>
                       </object>

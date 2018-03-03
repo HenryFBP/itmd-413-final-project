@@ -1,6 +1,7 @@
 from pygubu import *
 
 from GuiLootItem import *
+from Game import *
 
 
 def parent(w: Widget):
@@ -46,7 +47,7 @@ class Application:
             callbacks[func] = getattr(self, func)
 
         print("Callbacks:")
-        print(repr(callbacks).replace(',',',\n') + "\n")
+        print(repr(callbacks).replace(',', ',\n') + "\n")
 
         # 1: Create a builder
         self.builder = Builder()
@@ -71,6 +72,23 @@ class Application:
         print("Unconnected callbacks:")
         print(repr(unconnected) + "\n")
 
+        game = Game()
+
+        game.import_rarities("_data/loot_rarities.json")
+        print("Rarities:")
+        pprint(game.rarities)
+
+        game.import_items("_data/loot_items.json")
+        print("Items:")
+        pprint(game.itempool)
+
+        game.import_groups("_data/loot_groups.json")
+        print("Groups:")
+        pprint(game.itemgroups)
+
+        game.import_crates("_data/loot_crates.json")
+        print("Crates:")
+        pprint(game.itemcrates)
 
 if __name__ == '__main__':
     root = Tk()

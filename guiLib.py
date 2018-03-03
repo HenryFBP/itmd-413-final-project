@@ -9,7 +9,7 @@ modifiers = ["bad", "ok", "good", "awesome", "godly"]
 types = ["sword", "gun", "churro", "noodle", "shield"]
 conjs = ["of", "in", "with", "without", "having", "derived from", "inside of", "outside of"]
 attrs = ["justice", "evil", "zits", "pastries", "noodle-osity", "helplessness", "body odor"]
-
+types2 = ["weapon","armor","consumable"]
 
 def printif(*thing, b=False):
     """
@@ -41,8 +41,9 @@ def randomLootItem() -> LootItem:
     """
     name = f"{random_item(modifiers)} {random_item(types)} {random_item(conjs)} {random_item(attrs)}"
     rarity = random.uniform(0, 1)
+    type = random_item(types2)
 
-    return LootItem(name, rarity)
+    return LootItem(name, rarity, type)
 
 
 def random_hex_digit():

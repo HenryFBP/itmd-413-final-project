@@ -37,10 +37,10 @@ class LootCrate:
         :return: A list of ``LootItem`` objects.
         """
 
-        weights = [item.rarity for item in self.pool] # does not sum to one
+        weights = [item.rarity for item in self.pool]  # does not sum to one
 
         normalizedWeights = np.array(weights)
-        normalizedWeights /= normalizedWeights.sum() # this does
+        normalizedWeights /= normalizedWeights.sum()  # this does
 
         items = np.random.choice(self.pool, self.capacity, replace=False, p=normalizedWeights)
 
@@ -48,6 +48,19 @@ class LootCrate:
 
     def __iter__(self):
         return self.pool.__iter__()
+
+    def __str__(self):
+        ret = ""
+
+        ret += f"{self.capacity:2} items from '{self.name}' at ${self.cost}:\n"
+
+        for item in self.pool:
+            ret += str(item) + "\n"
+
+        return ret
+
+    def __repr__(self):
+        return str(self)
 
 
 def test():
