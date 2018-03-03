@@ -1,5 +1,6 @@
+from Game import *
+from GuiLootItem import *
 import random
-from pprint import *
 
 from LootItem import *
 
@@ -9,7 +10,16 @@ modifiers = ["bad", "ok", "good", "awesome", "godly"]
 types = ["sword", "gun", "churro", "noodle", "shield"]
 conjs = ["of", "in", "with", "without", "having", "derived from", "inside of", "outside of"]
 attrs = ["justice", "evil", "zits", "pastries", "noodle-osity", "helplessness", "body odor"]
-types2 = ["weapon","armor","consumable"]
+types2 = ["weapon", "armor", "consumable"]
+
+
+def parent(w: Widget):
+    """
+    :param w: The child widget.
+    :return: The parent of widget ``w``.
+    """
+    return w.nametowidget(name=w.winfo_parent())
+
 
 def printif(*thing, b=False):
     """
@@ -125,11 +135,13 @@ def generate_all_URLs():
     generate_URL_file(generate_URLS("https://csgostash.com/img/skins/large_1920/s"), name="skins")
     generate_URL_file(generate_URLS("https://csgostash.com/img/containers/c"), name="containers")
 
+
 def download_all_files(dir: str = "_data/icon_URLs"):
     """
     Download all files pointed to by text files inside of directory ``dir``.
     """
     pass
+
 
 def main():
     """

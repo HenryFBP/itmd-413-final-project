@@ -1,16 +1,12 @@
+from pprint import *
+
 from pygubu import *
 
 from Game import *
 from GuiLootItem import *
-
-
-def parent(w: Widget):
-    """
-    :param w: The child widget.
-    :return: The parent of widget ``w``.
-    """
-    return w.nametowidget(name=w.winfo_parent())
-
+from LootItem import *
+from guiLib import *
+from GuiLootCrateGraph import *
 
 class Application:
     def on_horizontal_scroll(self: Scrollbar, event: Event):
@@ -150,4 +146,5 @@ if __name__ == '__main__':
     root.withdraw()  # don't show blank window
 
     app = Application(root)
+    graph = GuiLootCrateGraph(root)
     root.mainloop()

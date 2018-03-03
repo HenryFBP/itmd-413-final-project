@@ -1,6 +1,7 @@
 from tkinter import *
 
-from guiLib import *
+import guiLib
+from LootItem import *
 
 
 class GuiLootItem:
@@ -13,7 +14,7 @@ class GuiLootItem:
         :return: ``item`` as a ``tkinter`` ``Frame`` object.
         """
 
-        frame = Frame(parent, bd=2, relief=SUNKEN, background=("#" + random_hex_string()))
+        frame = Frame(parent, bd=2, relief=SUNKEN, background=("#" + guiLib.random_hex_string()))
 
         label = Label(frame, text=item.name)
         label.pack()
