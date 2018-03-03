@@ -1,7 +1,7 @@
 from pygubu import *
 
-from GuiLootItem import *
 from Game import *
+from GuiLootItem import *
 
 
 def parent(w: Widget):
@@ -26,6 +26,30 @@ class Application:
         itemFrameRow = (len(self.inventory.children) if isinstance(len(self.inventory.children), int) else 0)
 
         itemFrame.grid(row=itemFrameRow, sticky=NSEW)
+
+    def update_balance_view(self: Tk, elt: Label = None):
+        """Update what the user sees as their balance."""
+
+        if elt is None:
+            elt = self.Label_balance
+
+        bal = str(self.game.kreds) + "kr"
+
+        elt.config(text=bal, )
+
+    def on_kreds_buy_change(self: Tk, event: Event):
+        """Binding for the Kreds-to-money field needing to be updated."""
+
+        elt: Entry = event.widget  # what triggered it
+
+        try:
+            val = int(elt.get())  # number of kreds they want
+            cost = self.game.kredsToMoney(val)
+            text = str(cost) + "$"
+
+            self.Label_kreds_to_money.config(text=text)  # write it down
+        except Exception as e:
+            return  # do nothing if they type in some garbage
 
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
@@ -64,7 +88,11 @@ class Application:
         # get scrollbar to register horizontal scroll event
         self.inventoryScroll: Scrollbar = parent(self.inventory)
 
-        # self.inventoryScroll.bin
+        # user's current kreds
+        self.Label_balance: Label = self.builder.get_object('Label_balance', master)
+
+        # kreds-to-money non-editable field
+        self.Label_kreds_to_money = self.builder.get_object('Label_creds_to_money', master)
 
         # connect method callbacks
         unconnected = self.builder.connect_callbacks(callbacks)
@@ -72,7 +100,10 @@ class Application:
         print("Unconnected callbacks:")
         print(repr(unconnected) + "\n")
 
+        # load all our game's JSON info
         game = Game()
+
+        self.game = game
 
         game.import_rarities("_data/loot_rarities.json")
         print("Rarities:")
@@ -89,6 +120,10 @@ class Application:
         game.import_crates("_data/loot_crates.json")
         print("Crates:")
         pprint(game.itemcrates)
+
+        # update kreds view
+        self.update_balance_view()
+
 
 if __name__ == '__main__':
     root = Tk()

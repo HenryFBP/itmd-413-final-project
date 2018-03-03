@@ -54,6 +54,18 @@ class Game:
         self.inventory = []
         self.crates = {}
 
+    def kredsToMoney(self, kreds):
+        """
+        Given Kreds, converts them into dollars.
+        """
+        return kreds / self.kredsratio
+
+    def moneyToKreds(self, dollars):
+        """
+        Given dollars, converts them into Kreds.
+        """
+        return self.kredsratio * dollars
+
     def itemByName(self, name):
         """
         Given a name, return an item with that name.

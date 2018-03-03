@@ -361,6 +361,7 @@
                             <property name="takefocus">false</property>
                             <property name="text" translatable="yes">100</property>
                             <property name="width">11</property>
+                            <bind add="True" handler="on_kreds_buy_change" sequence="&lt;KeyRelease&gt;" />
                             <layout>
                               <property name="column">0</property>
                               <property name="propagate">True</property>
@@ -428,14 +429,13 @@
                           </object>
                         </child>
                         <child>
-                          <object class="ttk.Entry" id="entry_balance">
-                            <property name="state">readonly</property>
+                          <object class="ttk.Label" id="Label_balance">
+                            <property name="relief">raised</property>
                             <property name="text" translatable="yes">???</property>
                             <layout>
                               <property name="column">1</property>
                               <property name="propagate">True</property>
                               <property name="row">0</property>
-                              <property name="sticky">ew</property>
                             </layout>
                           </object>
                         </child>
