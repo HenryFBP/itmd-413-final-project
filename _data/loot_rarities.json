@@ -1,18 +1,14 @@
 {
-	"common":
-	{
-		"weight": 1
-	},
-	"uncommon":
-	{
-		"weight": 10
-	},
-	"rare":
-	{
-		"weight": 100
-	},
-	"mythical":
-	{
-		"weight": 10000
-	}
+  "common": {
+    "weight": 1
+  },
+  "uncommon": {
+    "weight": 10
+  },
+  "rare": {
+    "weight": 100
+  },
+  "mythical": {
+    "weight": 10000
+  }
 }

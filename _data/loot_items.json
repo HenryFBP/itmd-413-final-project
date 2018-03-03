@@ -1,62 +1,52 @@
 {
-	"Pea Shooter":
-	{
-		"rarity": "common",
-		"worth": 0.17,
-		"type": "weapon"
-	},
-	"Trash Can Lid":
-	{
-		"rarity": "common",
-		"worth": 0.10,
-		"type": "armor"		
-	},
-	"Old Socks":
-	{
-		"rarity": "common",
-		"worth": 0.09,
-		"type": "armor"		
-	},
-	"Stick":
-	{
-		"rarity": "common",
-		"worth": 0.04,
-		"type": "weapon"
-	},
-	"Leftover Pizza":
-	{
-		"rarity": "common",
-		"worth": 0.15,
-		"type": "consumable"
-	},
-	"Iron Boots":
-	{
-		"rarity": "uncommon",
-		"worth": 5,
-		"type": "armor"
-	},
-	"Iron Helmet":
-	{
-		"rarity": "uncommon",
-		"worth": 4,
-		"type": "armor"
-	},
-	"Iron Shield":
-	{
-		"rarity": "uncommon",
-		"worth": 7,
-		"type": "armor"
-	},
-	"Excalibur":
-	{
-		"rarity": "mythical",
-		"worth": 1000,
-		"type": "weapon"
-	},
-	"A Really Shiny Bucket":
-	{
-		"rarity": "mythical",
-		"worth": 1000,
-		"type": "armor"
-	}
+  "Pea Shooter": {
+    "rarity": "common",
+    "worth": 0.17,
+    "type": "weapon"
+  },
+  "Trash Can Lid": {
+    "rarity": "common",
+    "worth": 0.10,
+    "type": "armor"
+  },
+  "Old Socks": {
+    "rarity": "common",
+    "worth": 0.09,
+    "type": "armor"
+  },
+  "Stick": {
+    "rarity": "common",
+    "worth": 0.04,
+    "type": "weapon"
+  },
+  "Leftover Pizza": {
+    "rarity": "common",
+    "worth": 0.15,
+    "type": "consumable"
+  },
+  "Iron Boots": {
+    "rarity": "uncommon",
+    "worth": 5,
+    "type": "armor"
+  },
+  "Iron Helmet": {
+    "rarity": "uncommon",
+    "worth": 4,
+    "type": "armor"
+  },
+  "Iron Shield": {
+    "rarity": "uncommon",
+    "worth": 7,
+    "type": "armor"
+  },
+  "Excalibur": {
+    "rarity": "mythical",
+    "worth": 1000,
+    "type": "weapon"
+  },
+  "A Really Shiny Bucket": {
+    "rarity": "mythical",
+    "worth": 1000,
+    "type": "armor"
+  }
 }
