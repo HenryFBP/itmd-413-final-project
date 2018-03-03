@@ -51,6 +51,23 @@ class Application:
         except Exception as e:
             return  # do nothing if they type in some garbage
 
+    def on_buy_kreds(self: Tk):
+        """Binding for the 'Buy' button being clicked."""
+
+        try:
+            kreds = int(self.Entry_kreds.get())
+
+            self.game.purchaseKreds(kreds)
+
+            self.update_balance_view()
+
+        except Exception as e:
+            return  # quit if they enter wacky data
+
+    def on_graph_click(self: Tk):
+        """Binding for the 'Track Earnings' button being clicked."""
+        pprint(self.game.transactionLog)  # TODO change this
+
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
         methods = [func for func in dir(Application) if (  # for ALL props of Application class, and add them IF
@@ -88,11 +105,14 @@ class Application:
         # get scrollbar to register horizontal scroll event
         self.inventoryScroll: Scrollbar = parent(self.inventory)
 
+        # how many kreds user wants to buy
+        self.Entry_kreds: Entry = self.builder.get_object("Entry_kreds", master)
+
         # user's current kreds
         self.Label_balance: Label = self.builder.get_object('Label_balance', master)
 
-        # kreds-to-money non-editable field
-        self.Label_kreds_to_money = self.builder.get_object('Label_creds_to_money', master)
+        # how much will entered kreds cost?
+        self.Label_kreds_to_money = self.builder.get_object('Label_kreds_to_money', master)
 
         # connect method callbacks
         unconnected = self.builder.connect_callbacks(callbacks)

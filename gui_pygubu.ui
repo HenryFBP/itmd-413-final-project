@@ -357,7 +357,7 @@
                           </columns>
                         </layout>
                         <child>
-                          <object class="ttk.Entry" id="Entry_creds">
+                          <object class="ttk.Entry" id="Entry_kreds">
                             <property name="takefocus">false</property>
                             <property name="text" translatable="yes">100</property>
                             <property name="width">11</property>
@@ -371,7 +371,7 @@
                         </child>
                         <child>
                           <object class="ttk.Label" id="Label_1">
-                            <property name="text" translatable="yes">creds =</property>
+                            <property name="text" translatable="yes">kreds at</property>
                             <layout>
                               <property name="column">1</property>
                               <property name="propagate">True</property>
@@ -381,6 +381,7 @@
                         </child>
                         <child>
                           <object class="ttk.Button" id="button_buy">
+                            <property name="command">on_buy_kreds</property>
                             <property name="compound">top</property>
                             <property name="text" translatable="yes">Buy!</property>
                             <property name="width">4</property>
@@ -393,7 +394,7 @@
                           </object>
                         </child>
                         <child>
-                          <object class="ttk.Label" id="Label_creds_to_money">
+                          <object class="ttk.Label" id="Label_kreds_to_money">
                             <property name="borderwidth">2</property>
                             <property name="relief">raised</property>
                             <property name="text" translatable="yes">10$</property>
@@ -443,6 +444,7 @@
                     </child>
                     <child>
                       <object class="ttk.Button" id="button_graph">
+                        <property name="command">on_graph_click</property>
                         <property name="text" translatable="yes">Track Earnings</property>
                         <layout>
                           <property name="column">0</property>
