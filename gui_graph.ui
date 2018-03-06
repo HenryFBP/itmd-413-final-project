@@ -4,7 +4,7 @@
     <property name="height">200</property>
     <property name="width">200</property>
     <child>
-      <object class="ttk.Frame" id="Frame_7">
+      <object class="ttk.Frame" id="Frame">
         <property name="height">200</property>
         <property name="width">200</property>
         <layout>
@@ -13,13 +13,23 @@
           <property name="row">0</property>
         </layout>
         <child>
-          <object class="ttk.Label" id="Label_1">
+          <object class="ttk.Label" id="Label_hello">
             <property name="text" translatable="yes">hey there im a GRAPFF
 </property>
             <layout>
               <property name="column">0</property>
               <property name="propagate">True</property>
               <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Canvas" id="CanvasGraph">
+            <property name="background">#cf72c8</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
             </layout>
           </object>
         </child>
