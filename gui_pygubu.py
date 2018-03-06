@@ -17,7 +17,9 @@ class Application:
         self.mainwindow.quit()
 
     def on_play_button_click(self: Tk):
-        itemFrame = GuiLootItem.item_to_frame(randomLootItem(), self.inventory)
+        randomItem: LootItem = randomLootItem()
+
+        itemFrame = GuiLootItem.item_to_frame(randomItem, self.inventory)
 
         itemFrameRow = (len(self.inventory.children) if isinstance(len(self.inventory.children), int) else 0)
 
