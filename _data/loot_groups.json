@@ -8,13 +8,35 @@
     "Neon Green Hat",
     "Spring Umbrella",
     "Leather Tuque"
+	"Bamboo Shoots",
+	"Empty Can",
+	"Used Tissue"
+  ],
+   "The Gathering":[
+	"Sugar Canes",
+	"Peas in a Pod",
+	"Leftover Pizza",
+	"Bowl of Ramen",
+	"Seared Raw Vegetables",
+	"Health Potion",
+	"Mushroom Fideua with Garlic aioli",
+	"Sous-Vide Braised Lamb Shank",
+	"Calabrian Sausage Ragu and Homemade Capunti"
   ],
    "The Call":[
 	"Stick",
+	"Wood Splinter",
+	"Wooden Shiv",
+	"Worn Wool Gloves",
     "Pigskin Boots",
+	"Javelin",
     "Leather Leggings",
     "Leatherback Chestplate",
     "Leather Tuque",
     "Fresh Shirt"
+  ]
+  "The Threshold":[
+	"
+
   ]
 }

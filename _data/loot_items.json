@@ -34,6 +34,11 @@
     "worth": 0.17,
     "type": "weapon"
   },
+  "Sugar Canes":{
+    "rarity": "common",
+    "worth": 0.65,
+    "type": "consumable"
+}
   "Worn Wool Gloves": {
     "rarity": "common",
     "worth": 1,
@@ -129,6 +134,11 @@
     "worth": 0.06,
     "type": "consumable"
   }, 
+  "Bowl of Ramen": {
+    "rarity": "common",
+    "worth": 0.24,
+    "type": "consumable"
+  },
  "Rapier": {
     "rarity": "uncommon",
     "worth": 15,
@@ -159,6 +169,12 @@
     "worth": 7,
     "type": "armor"
   },
+"Seared Raw Vegetables": {
+    "rarity": "uncommon",
+    "worth": 3.35,
+    "type": "consumable"
+  },
+
   "Iron Leggings": {
     "rarity": "uncommon",
     "worth": 10,
@@ -188,6 +204,31 @@
     "rarity": "uncommon",
     "worth": 10,
     "type": "weapon"
+  },
+  "Health Potion": {
+    "rarity": "uncommon",
+    "worth": 15,
+    "type": "consumable"
+  },
+  "Mushroom Fideua with Garlic Aioli": {
+    "rarity": "rare",
+    "worth": 18,
+    "type": "consumable"
+  },
+  "Sous-vide Braised Lamb Shank": {
+    "rarity": "rare",
+    "worth": 21,
+    "type": "consumable"
+  },
+  "Ratatouille":{
+	"rarity":"rare",
+	"worth":15,
+	"type":"consumable"
+  },
+  "Calabrian Sausage Ragu and Homemade Capunti":{
+	"rarity":"mythical"
+	"worth":25,
+	"type":"consumable"
   },
   "Iron Dagger": {
     "rarity": "uncommon",
