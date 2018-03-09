@@ -10,7 +10,7 @@ modifiers = ["bad", "ok", "good", "awesome", "godly"]
 types = ["sword", "gun", "churro", "noodle", "shield"]
 conjs = ["of", "in", "with", "without", "having", "derived from", "inside of", "outside of"]
 attrs = ["justice", "evil", "zits", "pastries", "noodle-osity", "helplessness", "body odor"]
-types2 = ["weapon", "armor", "consumable"]
+types2 = ["weapon", "armor", "consumable", "sellable"]
 
 
 def parent(w: Widget):

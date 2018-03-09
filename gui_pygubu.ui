@@ -267,6 +267,33 @@
                                 </child>
                               </object>
                             </child>
+                            <child>
+                              <object class="ttk.Frame" id="Frame_6">
+                                <property name="borderwidth">2</property>
+                                <property name="height">200</property>
+                                <property name="relief">raised</property>
+                                <property name="width">200</property>
+                                <layout>
+                                  <property name="column">0</property>
+                                  <property name="propagate">True</property>
+                                  <property name="row">6</property>
+                                  <property name="sticky">ew</property>
+                                </layout>
+                                <child>
+                                  <object class="ttk.Label" id="Fresh">
+                                    <property name="background">#71ffff</property>
+                                    <property name="text" translatable="yes">Fresh</property>
+                                    <property name="underline">0</property>
+                                    <layout>
+                                      <property name="column">0</property>
+                                      <property name="propagate">True</property>
+                                      <property name="row">0</property>
+                                      <property name="sticky">ew</property>
+                                    </layout>
+                                  </object>
+                                </child>
+                              </object>
+                            </child>
                           </object>
                         </child>
                       </object>
@@ -369,7 +396,7 @@
                         </layout>
                         <child>
                           <object class="ttk.Button" id="Button_crate_left">
-                            <property name="text" translatable="yes">&lt;</property>
+                            <property name="text" translatable="yes">&lt;-</property>
                             <property name="width">5</property>
                             <layout>
                               <property name="column">0</property>
@@ -381,7 +408,7 @@
                         </child>
                         <child>
                           <object class="ttk.Button" id="Button_crate_right">
-                            <property name="text" translatable="yes">&gt;</property>
+                            <property name="text" translatable="yes">-&gt;</property>
                             <property name="width">5</property>
                             <layout>
                               <property name="column">2</property>
@@ -430,16 +457,19 @@
                               <property name="column">0</property>
                               <property name="propagate">True</property>
                               <property name="row">0</property>
+                              <property name="sticky">w</property>
                             </layout>
                           </object>
                         </child>
                         <child>
                           <object class="ttk.Label" id="Label_1">
+                            <property name="takefocus">false</property>
                             <property name="text" translatable="yes">kreds at</property>
                             <layout>
                               <property name="column">1</property>
                               <property name="propagate">True</property>
                               <property name="row">0</property>
+                              <property name="sticky">e</property>
                             </layout>
                           </object>
                         </child>
@@ -461,11 +491,15 @@
                           <object class="ttk.Label" id="Label_kreds_to_money">
                             <property name="borderwidth">2</property>
                             <property name="relief">raised</property>
-                            <property name="text" translatable="yes">10$</property>
+                            <property name="text" translatable="yes">$10.00</property>
+                            <property name="width">10</property>
                             <layout>
                               <property name="column">2</property>
+                              <property name="padx">10</property>
+                              <property name="pady">0</property>
                               <property name="propagate">True</property>
                               <property name="row">0</property>
+                              <property name="sticky">e</property>
                             </layout>
                           </object>
                         </child>
@@ -495,12 +529,20 @@
                         </child>
                         <child>
                           <object class="ttk.Label" id="Label_balance">
-                            <property name="relief">raised</property>
+                            <property name="justify">left</property>
+                            <property name="relief">flat</property>
                             <property name="text" translatable="yes">???</property>
+                            <property name="underline">0</property>
+                            <property name="wraplength">30</property>
                             <layout>
                               <property name="column">1</property>
+                              <property name="ipadx">90</property>
+                              <property name="ipady">5</property>
+                              <property name="padx">0</property>
+                              <property name="pady">10</property>
                               <property name="propagate">True</property>
                               <property name="row">0</property>
+                              <property name="sticky">ew</property>
                             </layout>
                           </object>
                         </child>
