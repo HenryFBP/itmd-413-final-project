@@ -8,5 +8,15 @@
     ],
     "capacity": 3,
     "cost": 0.50
+  },
+  "Starter Crate": {
+    "groups": [
+      "The Call"
+    ],
+    "items": [
+      "A dozen eggs"
+    ],
+    "capacity": 4,
+    "cost": 1.00
   }
 }
