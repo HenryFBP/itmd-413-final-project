@@ -1,21 +1,13 @@
-from pprint import *
-
-from pygubu import *
-
-from Game import *
-from GuiLootItem import *
 from GuiLootCrate import *
-from LootItem import *
-from guiLib import *
 from GuiLootCrateGraph import *
 
-class MainGUI:
 
+class MainGUI:
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
         methods = [func for func in dir(MainGUI) if (  # for ALL props of Application class, and add them IF
-                callable(getattr(MainGUI, func)) and  # if it is callable
-                func.startswith("on_")  # if it starts with ``on_``.
+            callable(getattr(MainGUI, func)) and  # if it is callable
+            func.startswith("on_")  # if it starts with ``on_``.
         )]
 
         print("Methods:")
@@ -45,8 +37,10 @@ class MainGUI:
         # Get inventory pane to add stuff to
         self.inventory: Frame = self.builder.get_object('Frame_inventory', master)
 
-        # get crate frame
         self.Frame_crate: Frame = self.builder.get_object('crate_open',master)
+
+        # get crate frame display
+        self.Frame_crate_display: Frame = self.builder.get_object('crate_open_display', master)
 
         # get scrollbar to register horizontal scroll event
         self.inventoryScroll: Scrollbar = parent(self.inventory)
@@ -90,11 +84,16 @@ class MainGUI:
         # update kreds view
         self.update_balance_view()
 
-    def set_crate_frame(self: Tk, crate: LootCrate):
+    def set_crate_frame(self, crate: LootCrate):
         """
         Puts ``crate``, a ``LootCrate``, inside of the loot crate display frame, wherever that is.
+
+        Destroys all children inside of the Frame_crate_display. THERE CAN ONLY BE ONE!
         """
-        cf = GuiLootCrate.crate_to_frame(crate, self.Frame_crate)
+        for child in self.Frame_crate_display.winfo_children():
+            child.destroy()
+
+        cf = GuiLootCrate.crate_to_frame(crate, self.Frame_crate_display)
 
         cf.grid(row=0, sticky=NSEW)
 
