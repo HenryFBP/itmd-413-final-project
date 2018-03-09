@@ -324,7 +324,7 @@
                       </object>
                     </child>
                     <child>
-                      <object class="ttk.Frame" id="crateOpen">
+                      <object class="ttk.Frame" id="crate_open">
                         <property name="borderwidth">3</property>
                         <property name="height">250</property>
                         <property name="padding">0</property>

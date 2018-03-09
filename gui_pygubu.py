@@ -100,6 +100,9 @@ class Application:
         # Get inventory pane to add stuff to
         self.inventory: Frame = self.builder.get_object('Frame_inventory', master)
 
+        # get crate frame
+        self.Frame_crate: Frame = self.builder.get_object('crate_open',master)
+
         # get scrollbar to register horizontal scroll event
         self.inventoryScroll: Scrollbar = parent(self.inventory)
 
