@@ -4,19 +4,93 @@
       "Garbage Can"
     ],
     "items": [
-      "Pea Shooter"
+	  "Stick",
+      "Pea Shooter",
+	  "Leftover Pizza",
+	  "Trash Can Lid",
+	  "Old Socks",
+	  "Neon Green Hat",
+	  "Spring Umbrella",
+	  "Leather Toque",
+	  "Bamboo Shoots",
+	  "Empty Can",
+	  "Neon Green Hat",
+	  "Used Tissue",
+	  "Fresh Yeezies",
+	  "Seared Raw Vegetables",
+	  "Unending Ring of Student Funds",
+	  "Ribbon",
+	  "Tree Branch",
+  	  "Toasted Leaf",
+	  "A dozen Eggs",
+	  "Closed Seashell",
+	  "Octopus Leg",	
+	  "An Entrepreneurial Idea"
     ],
-    "capacity": 3,
-    "cost": 0.50
+    "capacity": 22,
+    "cost": 1.00
   },
+  "Healthy Crate": {
+	"groups": [
+	  "The Gathering"
+	],
+    "items": [
+      "Sugar Canes",
+	  "Peas in a Pod",
+	  "Leftover Pizza",
+	  "Bowl of Ramen",
+	  "Seared Raw Vegetables",
+	  "Health Potion",
+	  "Mushroom Fideua with Garlic aioli",
+	  "Sous-Vide Braised Lamb Shank",
+	  "Calabrian Sausage Ragu and Homemade Capunti"
+    ],
+	"capacity":9,
+	"cost": 5.00
+  }, 
   "Starter Crate": {
     "groups": [
       "The Call"
     ],
     "items": [
-      "A dozen eggs"
+      "Stick",
+	  "Wood Splinter",
+	  "Wooden Shiv",
+	  "Trash Can Lid",
+	  "Worn Wool Gloves",
+      "Pigskin Boots",
+	  "Javelin",
+      "Leather Leggings",
+      "Leatherback Chestplate",
+      "Leather Tuque",
+      "Fresh Shirt"
     ],
     "capacity": 4,
-    "cost": 1.00
+    "cost": 5.00
+  },
+  "Advanced Crate": {
+    "groups": [
+      "The Threshold"
+    ],
+    "items": [
+      "Stick",
+	  "Ribbon",
+	  "A dozen Eggs",
+	  "An Entrepreneurial Idea",
+	  "Ouroburos",
+	  "Fresh Shirt",
+	  "Fresh Underpants",
+	  "Fresh Dress",
+	  "Fresh Suit",
+	  "Iron Boots",
+	  "Iron Leggings",
+	  "Iron Chestplate",
+	  "Iron Helmet",
+	  "Iron Shield",
+	  "Iron Longsword",
+	  "Iron Dagger"
+    ],
+    "capacity": 16,
+    "cost": 5.00
   }
 }

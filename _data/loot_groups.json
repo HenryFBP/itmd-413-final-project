@@ -7,10 +7,21 @@
     "Old Socks",
     "Neon Green Hat",
     "Spring Umbrella",
-    "Leather Tuque"
+    "Leather Toque",
 	"Bamboo Shoots",
 	"Empty Can",
-	"Used Tissue"
+	"Neon Green Hat",
+	"Used Tissue",
+	"Fresh Yeezies",
+	"Seared Raw Vegetables",
+	"Unending Ring of Student Funds",
+	"Ribbon",
+	"Tree Branch",
+	"Toasted Leaf",
+	"A dozen Eggs",
+	"Closed Seashell",
+	"Octopus Leg",	
+	"An Entrepreneurial Idea"
   ],
    "The Gathering":[
 	"Sugar Canes",
@@ -27,6 +38,7 @@
 	"Stick",
 	"Wood Splinter",
 	"Wooden Shiv",
+	"Trash Can Lid",
 	"Worn Wool Gloves",
     "Pigskin Boots",
 	"Javelin",
@@ -34,9 +46,23 @@
     "Leatherback Chestplate",
     "Leather Tuque",
     "Fresh Shirt"
-  ]
+  ],
   "The Threshold":[
-	"
-
+	"Stick",
+	"Ribbon",
+	"A dozen Eggs",
+	"An Entrepreneurial Idea",
+	"Ouroburos",
+	"Fresh Shirt",
+	"Fresh Underpants",
+	"Fresh Dress",
+	"Fresh Suit",
+	"Iron Boots",
+	"Iron Leggings",
+	"Iron Chestplate",
+	"Iron Helmet",
+	"Iron Shield",
+	"Iron Longsword",
+	"Iron Dagger"
   ]
 }

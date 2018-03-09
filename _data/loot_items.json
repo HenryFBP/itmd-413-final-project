@@ -4,6 +4,11 @@
     "worth": 0,
     "type": "other"
   },
+  "An Entrepreneurial Idea":{
+	"rarity":"uncommon",
+	"worth":3.50,
+	"type": "other"
+  },
   "Wood Splinter": {
     "rarity": "common",
     "worth": 0.03,
@@ -38,8 +43,8 @@
     "rarity": "common",
     "worth": 0.65,
     "type": "consumable"
-}
-  "Worn Wool Gloves": {
+  },
+  "Worn Wool Gloves":{
     "rarity": "common",
     "worth": 1,
     "type": "armor"
@@ -226,7 +231,7 @@
 	"type":"consumable"
   },
   "Calabrian Sausage Ragu and Homemade Capunti":{
-	"rarity":"mythical"
+	"rarity":"mythical",
 	"worth":25,
 	"type":"consumable"
   },
