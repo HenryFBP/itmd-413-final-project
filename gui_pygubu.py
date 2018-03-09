@@ -17,6 +17,8 @@ class MainGUI:
         """
         cf = GuiLootCrate.crate_to_frame(crate, self.Frame_crate)
 
+        cf.grid(row=0, sticky=NSEW)
+
     def on_horizontal_scroll(self: Scrollbar, event: Event):
         print("Horiz scroll?")
         x = self.get()
@@ -74,9 +76,14 @@ class MainGUI:
         """Binding for the 'Track Earnings' button being clicked."""
         pprint(self.game.transactionLog)  # TODO change this
 
-        random_crate = random_item(self.game.itemcrates.keys())
+        random_crate = random_item(list(self.game.itemcrates.values()))
+
+        print("Random crate:")
+        print(random_crate)
 
         self.set_crate_frame(random_crate)
+
+
 
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
