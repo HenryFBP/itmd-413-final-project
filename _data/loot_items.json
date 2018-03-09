@@ -1,4 +1,34 @@
 {
+  "Blank Receipt": {
+    "rarity": "common",
+    "worth": 0,
+    "type": "other"
+  },
+  "Wood Splinter": {
+    "rarity": "common",
+    "worth": 0.03,
+    "type": "weapon"
+  },
+  "Bamboo Shoots": {
+    "rarity": "common",
+    "worth": 0.27,
+    "type": "weapon"
+  },
+  "Wooden Shiv": {
+    "rarity": "common",
+    "worth": 0.35,
+    "type": "weapon"
+  },
+  "Empty Can": {
+    "rarity": "common",
+    "worth": 0.15,
+    "type": "weapon"
+  },
+  "Used Tissue": {
+    "rarity": "common",
+    "worth": 0,
+    "type": "other"
+  },
   "Pea Shooter": {
     "rarity": "common",
     "worth": 0.17,
@@ -7,7 +37,7 @@
   "Worn Wool Gloves": {
     "rarity": "common",
     "worth": 1,
-    "type": "Armor"
+    "type": "armor"
   },
   "Javelin": {
     "rarity": "common",
@@ -39,6 +69,11 @@
     "worth": 3,
     "type": "armor"
   },
+  "Ouroburos":{
+    "rarity": "rare",
+    "worth":80.60,
+    "type": "armor"
+  },
   "Stick": {
     "rarity": "common",
     "worth": 0.04,
@@ -50,13 +85,38 @@
     "type": "armor"
   },
   "Fresh Shirt":{
-    "rarity": "common",
+    "rarity": "fresh",
     "worth":5,
     "type": "armor"
   },
   "Fresh Underpants":{
-    "rarity": "common",
+    "rarity": "fresh",
     "worth":5,
+    "type": "armor"
+  },
+  "Fresh Tank Top":{
+    "rarity": "fresh",
+    "worth":5,
+    "type": "armor"
+  },
+  "Fresh Dress":{
+    "rarity": "fresh",
+    "worth":15,
+    "type": "armor"
+  },
+  "Fresh Suit":{
+    "rarity": "fresh",
+    "worth":50,
+    "type": "armor"
+  },
+  "Kanye's Happiness":{
+    "rarity": "fresh",
+    "worth":5000,
+    "type": "armor"
+  },
+  "Fresh Yeezies":{
+    "rarity": "fresh",
+    "worth":1000,
     "type": "armor"
   },
   "Leftover Pizza": {
@@ -138,6 +198,11 @@
     "rarity": "uncommon",
     "worth": 7,
     "type": "armor"
+  },
+  "Unending Ring of Student Funds": {
+	"rarity": "mythical",
+    "worth":-1500,
+    "type": "other"
   },
   "Excalibur": {
     "rarity": "mythical",
