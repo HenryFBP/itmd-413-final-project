@@ -8,7 +8,14 @@ from LootItem import *
 from guiLib import *
 from GuiLootCrateGraph import *
 
-class Application:
+class MainGUI:
+
+    def set_crate_frame(self: Tk, frame: Frame):
+        """
+        Puts ``frame``, a ``LootCrate``, inside of the loot crate display frame, wherever that is.
+        """
+        pass
+
     def on_horizontal_scroll(self: Scrollbar, event: Event):
         print("Horiz scroll?")
         x = self.get()
@@ -68,9 +75,9 @@ class Application:
 
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
-        methods = [func for func in dir(Application) if (  # for ALL props of Application class, and add them IF
-            callable(getattr(Application, func)) and  # if it is callable
-            func.startswith("on_")  # if it starts with ``on_``.
+        methods = [func for func in dir(MainGUI) if (  # for ALL props of Application class, and add them IF
+                callable(getattr(MainGUI, func)) and  # if it is callable
+                func.startswith("on_")  # if it starts with ``on_``.
         )]
 
         print("Methods:")
@@ -144,12 +151,3 @@ class Application:
 
         # update kreds view
         self.update_balance_view()
-
-
-if __name__ == '__main__':
-    root = Tk()
-    root.withdraw()  # don't show blank window
-
-    app = Application(root)
-    graph = GuiLootCrateGraph(root)
-    root.mainloop()
