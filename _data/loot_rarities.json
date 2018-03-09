@@ -2,12 +2,18 @@
   "common": {
     "weight": 1
   },
+  "fresh":{
+    "weight": 5
+},
   "uncommon": {
     "weight": 10
   },
   "rare": {
     "weight": 100
   },
+  "legendary":{
+    "weight": 1000
+},
   "mythical": {
     "weight": 10000
   }

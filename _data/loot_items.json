@@ -4,14 +4,39 @@
     "worth": 0.17,
     "type": "weapon"
   },
-  "Trash Can Lid": {
+  "Worn Wool Gloves": {
     "rarity": "common",
-    "worth": 0.10,
+    "worth": 1,
+    "type": "Armor"
+  },
+  "Javelin": {
+    "rarity": "common",
+    "worth": 0.5,
+    "type": "weapon"
+  },
+  "Pigskin Boots": {
+    "rarity": "common",
+    "worth": 3,
     "type": "armor"
   },
-  "Old Socks": {
+  "Leather Leggings": {
     "rarity": "common",
-    "worth": 0.09,
+    "worth": 4,
+    "type": "armor"
+  },
+  "Leatherback Chestplate": {
+    "rarity": "common",
+    "worth": 5,
+    "type": "armor"
+  },
+  "Leather Tuque": {
+    "rarity": "uncommon",
+    "worth": 2,
+    "type": "armor"
+  },
+  "Neon Green Hat": {
+    "rarity": "uncommon",
+    "worth": 3,
     "type": "armor"
   },
   "Stick": {
@@ -19,22 +44,97 @@
     "worth": 0.04,
     "type": "weapon"
   },
+  "Old Socks": {
+    "rarity": "common",
+    "worth": 0.09,
+    "type": "armor"
+  },
+  "Fresh Shirt":{
+    "rarity": "common",
+    "worth":5,
+    "type": "armor"
+  },
+  "Fresh Underpants":{
+    "rarity": "common",
+    "worth":5,
+    "type": "armor"
+  },
   "Leftover Pizza": {
     "rarity": "common",
     "worth": 0.15,
     "type": "consumable"
   },
+  "Peas in a Pod":{
+    "rarity": "common",
+    "worth": 0.06,
+    "type": "consumable"
+  }, 
+ "Rapier": {
+    "rarity": "uncommon",
+    "worth": 15,
+    "type": "weapon"
+  },
+  "Scimitar": {
+    "rarity": "uncommon",
+    "worth": 17,
+    "type": "weapon"
+  },
+ "Greatsword": {
+    "rarity": "common",
+    "worth": 19,
+    "type": "weapon"
+  },
+  "Scythe": {
+    "rarity": "common",
+    "worth": 21,
+    "type": "weapon"
+  },
+  "Sharpened Sabre": {
+    "rarity": "uncommon",
+    "worth": 12,
+    "type": "weapon"
+  },
   "Iron Boots": {
     "rarity": "uncommon",
-    "worth": 5,
+    "worth": 7,
+    "type": "armor"
+  },
+  "Iron Leggings": {
+    "rarity": "uncommon",
+    "worth": 10,
+    "type": "armor"
+  },
+  "Spring Umbrella": {
+    "rarity": "uncommon",
+    "worth": 10,
+    "type": "other"
+  },
+  "Iron Chestplate": {
+    "rarity": "uncommon",
+    "worth": 15,
     "type": "armor"
   },
   "Iron Helmet": {
     "rarity": "uncommon",
-    "worth": 4,
+    "worth": 8,
     "type": "armor"
   },
   "Iron Shield": {
+    "rarity": "uncommon",
+    "worth": 11,
+    "type": "armor"
+  },
+  "Iron Longsword": {
+    "rarity": "uncommon",
+    "worth": 10,
+    "type": "weapon"
+  },
+  "Iron Dagger": {
+    "rarity": "uncommon",
+    "worth": 5,
+    "type": "weapon"
+  },
+  "Iron Sickle": {
     "rarity": "uncommon",
     "worth": 7,
     "type": "armor"
@@ -44,9 +144,41 @@
     "worth": 1000,
     "type": "weapon"
   },
-  "A Really Shiny Bucket": {
+  "A Really Shiny Bucket Helmet": {
     "rarity": "mythical",
     "worth": 1000,
     "type": "armor"
+  },
+  "Ribbon": {
+    "rarity": "common",
+    "worth": 3,
+    "type": "other"
+  },
+  "Tree Branch": {
+    "rarity": "common",
+    "worth": 1.50,
+    "type": "other"
+  },
+   "Toasted Leaf": {
+    "rarity": "common",
+    "worth": 0.85,
+    "type": "other"
+  },
+  "A dozen eggs": {
+    "rarity": "common",
+    "worth": 12,
+    "type": "other"
+  },
+  "Closed Seashell": {
+    "rarity": "uncommon",
+    "worth": 10,
+    "type": "other"
+  },
+  "Octopus Leg": {
+    "rarity": "uncommon",
+    "worth": 8.5,
+    "type": "other"
   }
+
 }
+
