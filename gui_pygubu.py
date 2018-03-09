@@ -4,17 +4,18 @@ from pygubu import *
 
 from Game import *
 from GuiLootItem import *
+from GuiLootCrate import *
 from LootItem import *
 from guiLib import *
 from GuiLootCrateGraph import *
 
 class MainGUI:
 
-    def set_crate_frame(self: Tk, frame: Frame):
+    def set_crate_frame(self: Tk, crate: LootCrate):
         """
-        Puts ``frame``, a ``LootCrate``, inside of the loot crate display frame, wherever that is.
+        Puts ``crate``, a ``LootCrate``, inside of the loot crate display frame, wherever that is.
         """
-        pass
+        cf = GuiLootCrate.crate_to_frame(crate, self.Frame_crate)
 
     def on_horizontal_scroll(self: Scrollbar, event: Event):
         print("Horiz scroll?")
@@ -72,6 +73,10 @@ class MainGUI:
     def on_graph_click(self: Tk):
         """Binding for the 'Track Earnings' button being clicked."""
         pprint(self.game.transactionLog)  # TODO change this
+
+        random_crate = random_item(self.game.itemcrates.keys())
+
+        self.set_crate_frame(random_crate)
 
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
