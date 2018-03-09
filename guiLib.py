@@ -40,6 +40,8 @@ def random_item(list):
 
     :return: Return a random item in list ``list`` between ``0`` and ``len(list)``.
     """
+    if len(list) is 0:
+        return None
     return list[random.randrange(0, len(list))]
 
 

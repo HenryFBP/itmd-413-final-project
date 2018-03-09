@@ -56,19 +56,19 @@ class Game:
 
     def kredsToMoney(self, kreds):
         """
-        Given Kreds, converts them into dollars.
+        Given ``kreds``, converts them into dollars.
         """
         return kreds / self.kredsratio
 
     def moneyToKreds(self, dollars):
         """
-        Given dollars, converts them into Kreds.
+        Given ``dollars``, converts them into Kreds.
         """
         return self.kredsratio * dollars
 
     def itemByName(self, name):
         """
-        Given a name, return an item with that name.
+        Given a ``name``, return an item with that ``name``.
         """
         for item in self.itempool:
             if item.name == name:
@@ -78,7 +78,7 @@ class Game:
 
     def logPurchaseKreds(self, kreds, dollars):
         """
-        Log that we purchased kreds for some amount of dollars.
+        Log that we purchased ``kreds`` for some amount of ``dollars``.
         """
         self.transactionLog.append({self.purchaseKreds.__name__: {
             "time": time.time(),
@@ -88,7 +88,7 @@ class Game:
         }})
 
     def purchaseKreds(self, k):
-        """Add k kreds to the Game's balance.
+        """Add ``k`` kreds to the Game's balance.
         This costs money."""
         dollars = k / self.kredsratio
 
