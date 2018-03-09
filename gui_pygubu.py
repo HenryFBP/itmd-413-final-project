@@ -11,80 +11,6 @@ from GuiLootCrateGraph import *
 
 class MainGUI:
 
-    def set_crate_frame(self: Tk, crate: LootCrate):
-        """
-        Puts ``crate``, a ``LootCrate``, inside of the loot crate display frame, wherever that is.
-        """
-        cf = GuiLootCrate.crate_to_frame(crate, self.Frame_crate)
-
-        cf.grid(row=0, sticky=NSEW)
-
-    def on_horizontal_scroll(self: Scrollbar, event: Event):
-        print("Horiz scroll?")
-        x = self.get()
-
-    def on_quit_button_click(self: Tk):
-        self.mainwindow.quit()
-
-    def on_play_button_click(self: Tk):
-        randomItem: LootItem = randomLootItem()
-
-        itemFrame = GuiLootItem.item_to_frame(randomItem, self.inventory)
-
-        itemFrameRow = (len(self.inventory.children) if isinstance(len(self.inventory.children), int) else 0)
-
-        itemFrame.grid(row=itemFrameRow, sticky=NSEW)
-
-    def update_balance_view(self: Tk, elt: Label = None):
-        """Update what the user sees as their balance."""
-
-        if elt is None:
-            elt = self.Label_balance
-
-        bal = str(self.game.kreds) + "kr"
-
-        elt.config(text=bal, )
-
-    def on_kreds_buy_change(self: Tk, event: Event):
-        """Binding for the Kreds-to-money field needing to be updated."""
-
-        elt: Entry = event.widget  # what triggered it
-
-        try:
-            val = int(elt.get())  # number of kreds they want
-            cost = self.game.kredsToMoney(val)
-            text = str(cost) + "$"
-
-            self.Label_kreds_to_money.config(text=text)  # write it down
-        except Exception as e:
-            return  # do nothing if they type in some garbage
-
-    def on_buy_kreds(self: Tk):
-        """Binding for the 'Buy' button being clicked."""
-
-        try:
-            kreds = int(self.Entry_kreds.get())
-
-            self.game.purchaseKreds(kreds)
-
-            self.update_balance_view()
-
-        except Exception as e:
-            return  # quit if they enter wacky data
-
-    def on_graph_click(self: Tk):
-        """Binding for the 'Track Earnings' button being clicked."""
-        pprint(self.game.transactionLog)  # TODO change this
-
-        random_crate = random_item(list(self.game.itemcrates.values()))
-
-        print("Random crate:")
-        print(random_crate)
-
-        self.set_crate_frame(random_crate)
-
-
-
     def __init__(self, master, path="./gui_pygubu.ui"):
         # make list of functions inside ``Application`` class.
         methods = [func for func in dir(MainGUI) if (  # for ALL props of Application class, and add them IF
@@ -163,3 +89,75 @@ class MainGUI:
 
         # update kreds view
         self.update_balance_view()
+
+    def set_crate_frame(self: Tk, crate: LootCrate):
+        """
+        Puts ``crate``, a ``LootCrate``, inside of the loot crate display frame, wherever that is.
+        """
+        cf = GuiLootCrate.crate_to_frame(crate, self.Frame_crate)
+
+        cf.grid(row=0, sticky=NSEW)
+
+    def on_horizontal_scroll(self: Scrollbar, event: Event):
+        print("Horiz scroll?")
+        x = self.get()
+
+    def on_quit_button_click(self: Tk):
+        self.mainwindow.quit()
+
+    def on_play_button_click(self: Tk):
+        randomItem: LootItem = randomLootItem()
+
+        itemFrame = GuiLootItem.item_to_frame(randomItem, self.inventory)
+
+        itemFrameRow = (len(self.inventory.children) if isinstance(len(self.inventory.children), int) else 0)
+
+        itemFrame.grid(row=itemFrameRow, sticky=NSEW)
+
+    def update_balance_view(self: Tk, elt: Label = None):
+        """Update what the user sees as their balance."""
+
+        if elt is None:
+            elt = self.Label_balance
+
+        bal = str(self.game.kreds) + "kr"
+
+        elt.config(text=bal, )
+
+    def on_kreds_buy_change(self: Tk, event: Event):
+        """Binding for the Kreds-to-money field needing to be updated."""
+
+        elt: Entry = event.widget  # what triggered it
+
+        try:
+            val = int(elt.get())  # number of kreds they want
+            cost = self.game.kredsToMoney(val)
+            text = str(cost) + "$"
+
+            self.Label_kreds_to_money.config(text=text)  # write it down
+        except Exception as e:
+            return  # do nothing if they type in some garbage
+
+    def on_buy_kreds(self: Tk):
+        """Binding for the 'Buy' button being clicked."""
+
+        try:
+            kreds = int(self.Entry_kreds.get())
+
+            self.game.purchaseKreds(kreds)
+
+            self.update_balance_view()
+
+        except Exception as e:
+            return  # quit if they enter wacky data
+
+    def on_graph_click(self: Tk):
+        """Binding for the 'Track Earnings' button being clicked."""
+        pprint(self.game.transactionLog)  # TODO change this
+
+        random_crate = random_item(list(self.game.itemcrates.values()))
+
+        print("Random crate:")
+        print(random_crate)
+
+        self.set_crate_frame(random_crate)
