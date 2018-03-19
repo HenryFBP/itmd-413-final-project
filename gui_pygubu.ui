@@ -396,6 +396,7 @@
                         </layout>
                         <child>
                           <object class="ttk.Button" id="Button_crate_left">
+                            <property name="command">on_left_crate_button_click</property>
                             <property name="text" translatable="yes">&lt;-</property>
                             <property name="width">5</property>
                             <layout>
@@ -408,6 +409,7 @@
                         </child>
                         <child>
                           <object class="ttk.Button" id="Button_crate_right">
+                            <property name="command">on_right_crate_button_click</property>
                             <property name="text" translatable="yes">-&gt;</property>
                             <property name="width">5</property>
                             <layout>
