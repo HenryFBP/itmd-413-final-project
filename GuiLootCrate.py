@@ -12,7 +12,7 @@ class GuiLootCrate:
         """
         rf = Frame(parent, bd=2, relief=SUNKEN)
 
-        name = Label(rf, text=crate.name)
+        name = Label(rf, text=crate.name+"OMG LOOK")
 
         name.pack()
 

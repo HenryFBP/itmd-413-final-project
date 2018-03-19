@@ -16,7 +16,7 @@ class LootCrate:
 
     name = "Default Loot Crate"
     cost = 10
-    pool = [randomLootItem() for i in range(10)]
+    pool = [guiLib.randomLootItem() for i in range(10)]
     capacity = 3
     opened = False
 
