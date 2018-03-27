@@ -1,295 +1,814 @@
 {
-  "Blank Receipt": {
-    "rarity": "common",
-    "worth": 0,
-    "type": "other"
-  },
-  "An Entrepreneurial Idea":{
-	"rarity":"uncommon",
-	"worth":3.50,
-	"type": "other"
-  },
-  "Wood Splinter": {
-    "rarity": "common",
-    "worth": 0.03,
-    "type": "weapon"
-  },
-  "Bamboo Shoots": {
-    "rarity": "common",
-    "worth": 0.27,
-    "type": "weapon"
-  },
-  "Wooden Shiv": {
-    "rarity": "common",
-    "worth": 0.35,
-    "type": "weapon"
-  },
-  "Empty Can": {
-    "rarity": "common",
-    "worth": 0.15,
-    "type": "weapon"
-  },
-  "Used Tissue": {
-    "rarity": "common",
-    "worth": 0,
-    "type": "other"
-  },
-  "Pea Shooter": {
-    "rarity": "common",
-    "worth": 0.17,
-    "type": "weapon"
-  },
-  "Sugar Canes":{
-    "rarity": "common",
-    "worth": 0.65,
-    "type": "consumable"
-  },
-  "Worn Wool Gloves":{
-    "rarity": "common",
-    "worth": 1,
-    "type": "armor"
-  },
-  "Javelin": {
-    "rarity": "common",
-    "worth": 0.5,
-    "type": "weapon"
-  },
-  "Pigskin Boots": {
-    "rarity": "common",
-    "worth": 3,
-    "type": "armor"
-  },
-  "Leather Leggings": {
-    "rarity": "common",
-    "worth": 4,
-    "type": "armor"
-  },
-  "Leatherback Chestplate": {
-    "rarity": "common",
-    "worth": 5,
-    "type": "armor"
-  },
-  "Leather Tuque": {
-    "rarity": "uncommon",
-    "worth": 2,
-    "type": "armor"
-  },
-  "Neon Green Hat": {
-    "rarity": "uncommon",
-    "worth": 3,
-    "type": "armor"
-  },
-  "Ouroburos":{
-    "rarity": "rare",
-    "worth":80.60,
-    "type": "armor"
-  },
-  "Stick": {
-    "rarity": "common",
-    "worth": 0.04,
-    "type": "weapon"
-  },
-  "Old Socks": {
-    "rarity": "common",
-    "worth": 0.09,
-    "type": "armor"
-  },
-  "Fresh Shirt":{
-    "rarity": "fresh",
-    "worth":5,
-    "type": "armor"
-  },
-  "Fresh Underpants":{
-    "rarity": "fresh",
-    "worth":5,
-    "type": "armor"
-  },
-  "Fresh Tank Top":{
-    "rarity": "fresh",
-    "worth":5,
-    "type": "armor"
-  },
-  "Fresh Dress":{
-    "rarity": "fresh",
-    "worth":15,
-    "type": "armor"
-  },
-  "Fresh Suit":{
-    "rarity": "fresh",
-    "worth":50,
-    "type": "armor"
-  },
-  "Kanye's Happiness":{
-    "rarity": "fresh",
-    "worth":5000,
-    "type": "armor"
-  },
-  "Fresh Yeezies":{
-    "rarity": "fresh",
-    "worth":1000,
-    "type": "armor"
-  },
-  "Leftover Pizza": {
-    "rarity": "common",
-    "worth": 0.15,
-    "type": "consumable"
-  },
-  "Peas in a Pod":{
-    "rarity": "common",
-    "worth": 0.06,
-    "type": "consumable"
-  }, 
-  "Bowl of Ramen": {
-    "rarity": "common",
-    "worth": 0.24,
-    "type": "consumable"
-  },
- "Rapier": {
-    "rarity": "uncommon",
-    "worth": 15,
-    "type": "weapon"
-  },
-  "Scimitar": {
-    "rarity": "uncommon",
-    "worth": 17,
-    "type": "weapon"
-  },
- "Greatsword": {
-    "rarity": "common",
-    "worth": 19,
-    "type": "weapon"
-  },
-  "Scythe": {
-    "rarity": "common",
-    "worth": 21,
-    "type": "weapon"
-  },
-  "Sharpened Sabre": {
-    "rarity": "uncommon",
-    "worth": 12,
-    "type": "weapon"
-  },
-  "Iron Boots": {
-    "rarity": "uncommon",
-    "worth": 7,
-    "type": "armor"
-  },
-"Seared Raw Vegetables": {
-    "rarity": "uncommon",
-    "worth": 3.35,
-    "type": "consumable"
-  },
+	"Blank Receipt": {
+		"rarity": "common",
+		"worth": 0,
+		"type": "other"
+	},
+	"An Entrepreneurial Idea": {
+		"rarity": "uncommon",
+		"worth": 3.50,
+		"type": "other"
+	},
+	"Wood Splinter": {
+		"rarity": "common",
+		"worth": 0.03,
+		"type": "weapon"
+	},
+	"Bamboo Shoots": {
+		"rarity": "common",
+		"worth": 0.27,
+		"type": "weapon"
+	},
+	"Wooden Shiv": {
+		"rarity": "common",
+		"worth": 0.35,
+		"type": "weapon"
+	},
+	"Empty Can": {
+		"rarity": "common",
+		"worth": 0.15,
+		"type": "weapon"
+	},
+	"Used Tissue": {
+		"rarity": "common",
+		"worth": 0,
+		"type": "other"
+	},
+	"Pea Shooter": {
+		"rarity": "common",
+		"worth": 0.17,
+		"type": "weapon"
+	},
+	"Sugar Canes": {
+		"rarity": "common",
+		"worth": 0.65,
+		"type": "consumable"
+	},
+	"Worn Wool Gloves": {
+		"rarity": "common",
+		"worth": 1,
+		"type": "armor"
+	},
+	"Javelin": {
+		"rarity": "common",
+		"worth": 0.5,
+		"type": "weapon"
+	},
+	"Pigskin Boots": {
+		"rarity": "common",
+		"worth": 3,
+		"type": "armor"
+	},
+	"Leather Leggings": {
+		"rarity": "common",
+		"worth": 4,
+		"type": "armor"
+	},
+	"Leatherback Chestplate": {
+		"rarity": "common",
+		"worth": 5,
+		"type": "armor"
+	},
+	"Leather Tuque": {
+		"rarity": "uncommon",
+		"worth": 2,
+		"type": "armor"
+	},
+	"Neon Green Hat": {
+		"rarity": "uncommon",
+		"worth": 3,
+		"type": "armor"
+	},
+	"Ouroburos": {
+		"rarity": "rare",
+		"worth": 80.60,
+		"type": "armor"
+	},
+	"Stick": {
+		"rarity": "common",
+		"worth": 0.04,
+		"type": "weapon"
+	},
+	"Old Socks": {
+		"rarity": "common",
+		"worth": 0.09,
+		"type": "armor"
+	},
+	"Fresh Shirt": {
+		"rarity": "fresh",
+		"worth": 5,
+		"type": "armor"
+	},
+	"Fresh Underpants": {
+		"rarity": "fresh",
+		"worth": 5,
+		"type": "armor"
+	},
+	"Fresh Tank Top": {
+		"rarity": "fresh",
+		"worth": 5,
+		"type": "armor"
+	},
+	"Fresh Dress": {
+		"rarity": "fresh",
+		"worth": 15,
+		"type": "armor"
+	},
+	"Fresh Suit": {
+		"rarity": "fresh",
+		"worth": 50,
+		"type": "armor"
+	},
+	"Kanye's Happiness": {
+		"rarity": "fresh",
+		"worth": 5000,
+		"type": "armor"
+	},
+	"Fresh Yeezies": {
+		"rarity": "fresh",
+		"worth": 1000,
+		"type": "armor"
+	},
+	"Leftover Pizza": {
+		"rarity": "common",
+		"worth": 0.15,
+		"type": "consumable"
+	},
+	"Peas in a Pod": {
+		"rarity": "common",
+		"worth": 0.06,
+		"type": "consumable"
+	},
+	"Bowl of Ramen": {
+		"rarity": "common",
+		"worth": 0.24,
+		"type": "consumable"
+	},
+	"Rapier": {
+		"rarity": "uncommon",
+		"worth": 15,
+		"type": "weapon"
+	},
+	"Scimitar": {
+		"rarity": "uncommon",
+		"worth": 17,
+		"type": "weapon"
+	},
+	"Greatsword": {
+		"rarity": "common",
+		"worth": 19,
+		"type": "weapon"
+	},
+	"Scythe": {
+		"rarity": "common",
+		"worth": 21,
+		"type": "weapon"
+	},
+	"Sharpened Sabre": {
+		"rarity": "uncommon",
+		"worth": 12,
+		"type": "weapon"
+	},
+	"Iron Boots": {
+		"rarity": "uncommon",
+		"worth": 7,
+		"type": "armor"
+	},
+	"Seared Raw Vegetables": {
+		"rarity": "uncommon",
+		"worth": 3.35,
+		"type": "consumable"
+	},
 
-  "Iron Leggings": {
-    "rarity": "uncommon",
-    "worth": 10,
-    "type": "armor"
-  },
-  "Spring Umbrella": {
-    "rarity": "uncommon",
-    "worth": 10,
-    "type": "other"
-  },
-  "Iron Chestplate": {
-    "rarity": "uncommon",
-    "worth": 15,
-    "type": "armor"
-  },
-  "Iron Helmet": {
-    "rarity": "uncommon",
-    "worth": 8,
-    "type": "armor"
-  },
-  "Iron Shield": {
-    "rarity": "uncommon",
-    "worth": 11,
-    "type": "armor"
-  },
-  "Iron Longsword": {
-    "rarity": "uncommon",
-    "worth": 10,
-    "type": "weapon"
-  },
-  "Health Potion": {
-    "rarity": "uncommon",
-    "worth": 15,
-    "type": "consumable"
-  },
-  "Mushroom Fideua with Garlic Aioli": {
-    "rarity": "rare",
-    "worth": 18,
-    "type": "consumable"
-  },
-  "Sous-vide Braised Lamb Shank": {
-    "rarity": "rare",
-    "worth": 21,
-    "type": "consumable"
-  },
-  "Ratatouille":{
-	"rarity":"rare",
-	"worth":15,
-	"type":"consumable"
-  },
-  "Calabrian Sausage Ragu and Homemade Capunti":{
-	"rarity":"mythical",
-	"worth":25,
-	"type":"consumable"
-  },
-  "Iron Dagger": {
-    "rarity": "uncommon",
-    "worth": 5,
-    "type": "weapon"
-  },
-  "Iron Sickle": {
-    "rarity": "uncommon",
-    "worth": 7,
-    "type": "armor"
-  },
-  "Unending Ring of Student Funds": {
-	"rarity": "mythical",
-    "worth":-1500,
-    "type": "other"
-  },
-  "Excalibur": {
-    "rarity": "mythical",
-    "worth": 1000,
-    "type": "weapon"
-  },
-  "A Really Shiny Bucket Helmet": {
-    "rarity": "mythical",
-    "worth": 1000,
-    "type": "armor"
-  },
-  "Ribbon": {
-    "rarity": "common",
-    "worth": 3,
-    "type": "other"
-  },
-  "Tree Branch": {
-    "rarity": "common",
-    "worth": 1.50,
-    "type": "other"
-  },
-   "Toasted Leaf": {
-    "rarity": "common",
-    "worth": 0.85,
-    "type": "other"
-  },
-  "A dozen eggs": {
-    "rarity": "common",
-    "worth": 12,
-    "type": "other"
-  },
-  "Closed Seashell": {
-    "rarity": "uncommon",
-    "worth": 10,
-    "type": "other"
-  },
-  "Octopus Leg": {
-    "rarity": "uncommon",
-    "worth": 8.5,
-    "type": "other"
-  }
-
+	"Iron Leggings": {
+		"rarity": "uncommon",
+		"worth": 10,
+		"type": "armor"
+	},
+	"Spring Umbrella": {
+		"rarity": "uncommon",
+		"worth": 10,
+		"type": "other"
+	},
+	"Iron Chestplate": {
+		"rarity": "uncommon",
+		"worth": 15,
+		"type": "armor"
+	},
+	"Iron Helmet": {
+		"rarity": "uncommon",
+		"worth": 8,
+		"type": "armor"
+	},
+	"Iron Shield": {
+		"rarity": "uncommon",
+		"worth": 11,
+		"type": "armor"
+	},
+	"Iron Longsword": {
+		"rarity": "uncommon",
+		"worth": 10,
+		"type": "weapon"
+	},
+	"Health Potion": {
+		"rarity": "uncommon",
+		"worth": 15,
+		"type": "consumable"
+	},
+	"Mushroom Fideua with Garlic Aioli": {
+		"rarity": "rare",
+		"worth": 18,
+		"type": "consumable"
+	},
+	"Sous-vide Braised Lamb Shank": {
+		"rarity": "rare",
+		"worth": 21,
+		"type": "consumable"
+	},
+	"Ratatouille": {
+		"rarity": "rare",
+		"worth": 15,
+		"type": "consumable"
+	},
+	"Calabrian Sausage Ragu and Homemade Capunti": {
+		"rarity": "mythical",
+		"worth": 25,
+		"type": "consumable"
+	},
+	"Iron Dagger": {
+		"rarity": "uncommon",
+		"worth": 5,
+		"type": "weapon"
+	},
+	"Iron Sickle": {
+		"rarity": "uncommon",
+		"worth": 7,
+		"type": "armor"
+	},
+	"Unending Ring of Student Funds": {
+		"rarity": "mythical",
+		"worth": -1500,
+		"type": "other"
+	},
+	"Excalibur": {
+		"rarity": "mythical",
+		"worth": 1000,
+		"type": "weapon"
+	},
+	"A Really Shiny Bucket Helmet": {
+		"rarity": "mythical",
+		"worth": 1000,
+		"type": "armor"
+	},
+	"Ribbon": {
+		"rarity": "common",
+		"worth": 3,
+		"type": "other"
+	},
+	"Tree Branch": {
+		"rarity": "common",
+		"worth": 1.50,
+		"type": "other"
+	},
+	"Toasted Leaf": {
+		"rarity": "common",
+		"worth": 0.85,
+		"type": "other"
+	},
+	"A dozen eggs": {
+		"rarity": "common",
+		"worth": 12,
+		"type": "other"
+	},
+	"Closed Seashell": {
+		"rarity": "uncommon",
+		"worth": 10,
+		"type": "other"
+	},
+	"Octopus Leg": {
+		"rarity": "uncommon",
+		"worth": 8.5,
+		"type": "other"
+	}
+------------------------------------------------------------------
+	"Blank Receipt": {
+		"rarity": "common",
+		"worth": 0,
+		"type": "other"
+	}
+	"Used Tissue": {
+		"rarity": "common",
+		"worth": 0,
+		"type": "other"
+	}
+	"Wood Splinter": {
+		"rarity": "uncommon",
+		"worth": 0.03,
+		"type": "weapon"
+	}
+	"Stick": {
+		"rarity": "common",
+		"worth": 0.04,
+		"type": "other"
+	}
+	"Peas in a Pod": {
+		"rarity": "common",
+		"worth": 0.06,
+		"type": "consumable"
+	}
+		"Old Socks": {
+		"rarity": "common",
+		"worth": 0.09,
+		"type": "armor"
+	}
+	"Empty Can": {
+		"rarity": "common",
+		"worth": 0.15,
+		"type": "other"
+	}
+		"Leftover Pizza": {
+		"rarity": "common",
+		"worth": 0.15,
+		"type": "consumable"
+	}
+	"Pea Shooter": {
+		"rarity": "common",
+		"worth": 0.17,
+		"type": "weapon"
+	}
+	"Bowl of Ramen": {
+		"rarity": "common",
+		"worth": 0.24,
+		"type": "consumable"
+	}
+	"Bamboo Shoots": {
+		"rarity": "common",
+		"worth": 0.27,
+		"type": "weapon"
+	}
+	"Wooden Shiv": {
+		"rarity": "common",
+		"worth": 0.35,
+		"type": "weapon"
+	}
+	"Javelin": {
+		"rarity": "common",
+		"worth": 0.50,
+		"type": "weapon"
+	}
+	"Sugar Canes": {
+		"rarity": "common",
+		"worth":0.65,
+		"type": "consumable"
+	}
+	"Toasted Leaf": {
+		"rarity": "common",
+		"worth": 0.85,
+		"type": "other"
+	}
+		"Worn Wool Gloves": {
+		"rarity": "common",
+		"worth": 1,
+		"type": "armor"
+	}
+	"Tree Branch": {
+		"rarity": "common",
+		"worth": 1.5,
+		"type": "other"
+	}
+	"Pigskin Boots": {
+		"rarity": "common",
+		"worth": 3,
+		"type": "armor"
+	}
+	"Ribbon": {
+		"rarity": "common",
+		"worth": 3,
+		"type": "other"
+	}
+	"Leather Leggings": {
+		"rarity": "common",
+		"worth": 4,
+		"type": "other"
+	}
+	"Leatherback Chestplate": {
+		"rarity": "common",
+		"worth": 5,
+		"type": "armor"
+	}
+	"A Dozen Eggs": {
+		"rarity": "common",
+		"worth": 6,
+		"type": "other"
+	}
+	"Aspearagus": {
+		"rarity": "common",
+		"worth": 3.45,
+		"type": "weapon"
+	}
+	"Rusted Sword": {
+		"rarity": "common",
+		"worth": 1.25,
+		"type": "weapon"
+	}
+	"Baseball Mitt": {
+		"rarity": "common",
+		"worth": 2,
+		"type": "other"
+	}
+	"Bardiche": {
+		"rarity": "common",
+		"worth": 3.1,
+		"type": "weapon"
+	}
+	"Halberd": {
+		"rarity": "common",
+		"worth": 3.4,
+		"type": "weapon"
+	}
+	"Driftwood Bow": {
+		"rarity": "common",
+		"worth": 2.8,
+		"type": "weapon"
+	}
+	"Toy Bow": {
+		"rarity": "common",
+		"worth": 1.45,
+		"type": "weapon"
+	}
+	"Super Soaker": {
+		"rarity": "common",
+		"worth": 3.90,
+		"type": "weapon"
+	}
+	"Hand Blaster": {
+		"rarity": "common",
+		"worth": 4,
+		"type": "weapon"
+	}
+	"Stone Axe": {
+		"rarity": "common",
+		"worth": 2.7,
+		"type": "weapon"
+	}
+	"Nailed Bat": {
+		"rarity": "common",
+		"worth": 5,
+		"type": "weapon"
+	}
+	"Toy Wand": {
+		"rarity": "common",
+		"worth": 2.9,
+		"type": "weapon"
+	}
+	"Mace": {
+		"rarity": "common",
+		"worth": 1.8,
+		"type": "weapon"
+	}
+	"Worn Cane": {
+		"rarity": "common",
+		"worth": 1.5,
+		"type": "weapon"
+	}
+	"Familiar Fan": {
+		"rarity": "common",
+		"worth": 1.5,
+		"type": "weapon"
+	}
+	"Wrinkled Cape": {
+		"rarity": "common",
+		"worth": 1.7,
+		"type": "armor"
+	}
+	"Shredded Silk": {
+		"rarity": "common",
+		"worth": 1.9,
+		"type": "other"
+	}
+	"Flower Tube": {
+		"rarity": "common",
+		"worth": 1.4,
+		"type": "other"
+	}
+	"Bandana": {
+		"rarity": "common",
+		"worth": 1.9,
+		"type": "other"
+	}
+	"Aviator Glasses": {
+		"rarity": "common",
+		"worth": 4.2,
+		"type": "other"
+	}
+	"Top Hat": {
+		"rarity": "common",
+		"worth": 5,
+		"type": "other"
+	}
+	"Fedora": {
+		"rarity": "common",
+		"worth": 5,
+		"type": "other"
+	}
+	"Rusted Bronze Medal": {
+		"rarity": "common",
+		"worth": 1.9,
+		"type": "other"
+	}
+	"Toy Medal": {
+		"rarity": "common",
+		"worth": 1,
+		"type": "other"
+	}
+	"Counterfeit Medal": {
+		"rarity": "common",
+		"worth": 0.95,
+		"type": "other"
+	}
+	"Packing Peanut": {
+		"rarity": "common",
+		"worth": 0.03,
+		"type": "other"
+	}
+	"Wine Glass": {
+		"rarity": "common",
+		"worth": 1.03,
+		"type": "other"
+	}
+	"Pillow Case": {
+		"rarity": "common",
+		"worth": 0.66,
+		"type": "other"
+	}
+	"Milk Cap": {
+		"rarity": "common",
+		"worth": 0.47,
+		"type": "other"
+	}
+	"Broccoli Club": {
+		"rarity": "common",
+		"worth": 0.38,
+		"type": "weapon"
+	}
+	"Blouse": {
+		"rarity": "common",
+		"worth": 0.85,
+		"type": "armor"
+	}
+	"Nail Clippers": {
+		"rarity": "common",
+		"worth": 1.48,
+		"type": "other"
+	}
+	"Serrated Knife": {
+		"rarity": "common",
+		"worth": 2.44,
+		"type": "weapon"
+	}
+	"Belt Pouch": {
+		"rarity": "common",
+		"worth": 2.79,
+		"type": "armor"
+	}
+	"CD-ROM": {
+		"rarity": "common",
+		"worth": 4.10,
+		"type": "other"
+	}
+	"Sun Glasses": {
+		"rarity": "common",
+		"worth": 3.36,
+		"type": "armor"
+	}
+	"Balloon": {
+		"rarity": "common",
+		"worth":1.87,
+		"type": "other"
+	}
+	"Fork": {
+		"rarity": "common",
+		"worth":0.87,
+		"type": "other"
+	}
+	"Spoon": {
+		"rarity": "common",
+		"worth": 1.15,
+		"type": "other"
+	}
+	"Shovel": {
+		"rarity": "common",
+		"worth":2.15,
+		"type": "other"
+	}
+	"Bottle Cap": {
+		"rarity": "common",
+		"worth":2.87,
+		"type": "other"
+	}
+	"Ring": {
+		"rarity": "common",
+		"worth": 4.96,
+		"type": "other"
+	}
+	"Chalk": {
+		"rarity": "common",
+		"worth": 1.65,
+		"type": "other"
+	}
+	"Paper Plates": {
+		"rarity": "common",
+		"worth": 0.34,
+		"type": "other"
+	}
+	"I.O.U.": {
+		"rarity": "common",
+		"worth": 10,
+		"type": "other"
+	}
+	"Shoe Lace": {
+		"rarity": "common",
+		"worth": 0.1,
+		"type": "other"
+	}
+	"Pool Stick": {
+		"rarity": "common",
+		"worth": 1.89,
+		"type": "other"
+	}
+	"Candy Wrapper": {
+		"rarity": "common",
+		"worth": 0.01,
+		"type": "other"
+	}
+	"String": {
+		"rarity": "common",
+		"worth": 0.05,
+		"type": "other"
+	}
+	"Handheld Mirror": {
+		"rarity": "common",
+		"worth": 3.25,
+		"type": "other"
+	}
+	"Model Car": {
+		"rarity": "common",
+		"worth": 1.25,
+		"type": "other"
+	}
+	"Rug": {
+		"rarity": "common",
+		"worth": 3.25,
+		"type": "other"
+	}
+	"Nail File": {
+		"rarity": "common",
+		"worth": 1.05,
+		"type": "other"
+	}
+	"Purse": {
+		"rarity": "common",
+		"worth": 2.78,
+		"type": "other"
+	}
+	"Air Refreshener": {
+		"rarity": "common",
+		"worth": 3.49,
+		"type": "other"
+	}
+	"Sketch Pad": {
+		"rarity": "common",
+		"worth": 3.89,
+		"type": "other"
+	}
+	"Bike Helmet": {
+		"rarity": "common",
+		"worth": 3.20,
+		"type": "armor"
+	}
+	"Horseshoe Magnets": {
+		"rarity": "common",
+		"worth": 3.64,
+		"type": "other"
+	}
+	"Sponge": {
+		"rarity": "common",
+		"worth": 3.64,
+		"type": "other"
+	}
+	"Pencil": {
+		"rarity": "common",
+		"worth": 3.47,
+		"type": "weapon"
+	}
+	"Pet Owl": {
+		"rarity": "common",
+		"worth": 13.74,
+		"type": "other"
+	}
+	"Hairbrush": {
+		"rarity": "common",
+		"worth": 1.51,
+		"type": "other"
+	}
+	"Tomato": {
+		"rarity": "common",
+		"worth": 2.99,
+		"type": "weapon"
+	}
+	"Roll of Paper": {
+		"rarity": "common",
+		"worth": 2.19,
+		"type": "other"
+	}
+	"Cards": {
+		"rarity": "common",
+		"worth": 2.52,
+		"type": "other"
+	}
+	"Tape": {
+		"rarity": "common",
+		"worth": 1.69,
+		"type": "other"
+	}
+	"Bow": {
+		"rarity": "common",
+		"worth": 3.12,
+		"type": "weapon"
+	}
+	"Bookmark": {
+		"rarity": "common",
+		"worth": 2.55,
+		"type": "other"
+	}
+	"Keychain": {
+		"rarity": "common",
+		"worth": 2.3,
+		"type": "other"
+	}
+	"Sock": {
+		"rarity": "common",
+		"worth": 0.75,
+		"type": "other"
+	}
+	"Unhinged Tire": {
+		"rarity": "common",
+		"worth": 3.24,
+		"type": "other"
+	}
+	"Blanket": {
+		"rarity": "common",
+		"worth": 2.78,
+		"type": "other"
+	}
+	"Detergent": {
+		"rarity": "common",
+		"worth": 2.31,
+		"type": "other"
+	}
+	"Edible Detergent": {
+		"rarity": "common",
+		"worth": 4.50,
+		"type": "other"
+	}
+	"Dust Mouse": {
+		"rarity": "common",
+		"worth": 0.05,
+		"type": "other"
+	}
+	"Plastic Bowl": {
+		"rarity": "common",
+		"worth": 3.15,
+		"type": "other"
+	}
+	"Bobby Pin": {
+		"rarity": "common",
+		"worth": 1,
+		"type": "other"
+	}
+	"Fashion Magazine": {
+		"rarity": "common",
+		"worth": 3.99,
+		"type": "other"
+	}
+	"Comic Book": {
+		"rarity": "common",
+		"worth": 5.99,
+		"type": "other"
+	}
+	"Trade Magazine": {
+		"rarity": "common",
+		"worth": 2.59,
+		"type": "other"
+	}
+	"Buttercup Toy": {
+		"rarity": "common",
+		"worth": 1.70,
+		"type": "other"
+	}
+	"Lab Scale": {
+		"rarity": "common",
+		"worth": 4.04,
+		"type": "other"
+	}
 }
-
