@@ -64,5 +64,42 @@
 	"Iron Shield",
 	"Iron Longsword",
 	"Iron Dagger"
+  ],
+"The Gate":[
+	"Stick",
+	"Steel Boots",
+	"Steel Leggings",
+	"Steel Chestplate",
+	"Steel Helmet",
+	"Steel Shield",
+	"Steel Longsword",
+	"Steel Dagger",
+    "Adamantium Boots",
+	"Adamantium Leggings",
+	"Adamantium Chestplate",
+	"Adamantium Helmet",
+	"Adamantium Shield",
+	"Adamantium Longsword",
+	"Adamantium Dagger"
+  ],
+"The March":[
+	"Stick",
+	"Steel Boots",
+	"Steel Leggings",
+	"Steel Chestplate",
+	"Steel Helmet",
+	"Steel Shield",
+	"Steel Longsword",
+	"Steel Dagger",
+    "Adamantium Boots",
+	"Adamantium Leggings",
+	"Adamantium Chestplate",
+	"Adamantium Helmet",
+	"Adamantium Shield",
+	"Adamantium Longsword",
+	"Adamantium Dagger"
   ]
+
+
+
 }
