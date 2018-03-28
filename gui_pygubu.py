@@ -106,7 +106,10 @@ class MainGUI:
 
     def on_left_crate_button_click(self: Tk):
         print("WHO BE CYCLIN LEFT THRU CRATES?!")
+        a = self.game.cycleLeft()
+        self.set_crate_frame(a)
 
+        
     def on_right_crate_button_click(self: Tk):
         print("WHO BE CYCLIN RIGHT THRU CRATES?!")
 

@@ -202,3 +202,30 @@ class Game:
             self.itemcrates[crateName] = crate
 
         return crates
+    def cycleLeft(self):
+        """ Cycles Crates Left and returns the crate"""
+        allcrates = list(self.itemcrates.values())
+        acrate = allcrates[3]
+
+        print("total crates:")
+        print(len(allcrates))
+
+        return(acrate)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
