@@ -204,13 +204,20 @@ class Game:
         return crates
     def cycleLeft(self):
         """ Cycles Crates Left and returns the crate"""
+        if not hasattr(self, '_crate_idx') or self._crate_idx is None:
+            self._crate_idx = 0
+
+        self._crate_idx -= 1
+        print("Current idx is " + str(self._crate_idx))
+
         allcrates = list(self.itemcrates.values())
-        acrate = allcrates[3]
+        acrate = allcrates[self._crate_idx]
 
         print("total crates:")
         print(len(allcrates))
 
         return(acrate)
+
 
 
 
