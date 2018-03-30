@@ -202,7 +202,9 @@ class Game:
             self.itemcrates[crateName] = crate
 
         return crates
+
     def cycleLeft(self):
+
         """ Cycles Crates Left and returns the crate"""
         if not hasattr(self, '_crate_idx') or self._crate_idx is None:
             self._crate_idx = 0
@@ -212,27 +214,32 @@ class Game:
 
         allcrates = list(self.itemcrates.values())
         acrate = allcrates[self._crate_idx]
+        """
+        if self.crate_idx % len(allcrates) == 0:
+            self._crate_idx = 0
+        print("total crates:")
+        print(len(allcrates))"""
+
+        return (acrate)
+
+    def cycleRight(self):
+
+        """ Cycles Crates Left and returns the crate"""
+        if not hasattr(self, '_crate_idx') or self._crate_idx is None:
+            self._crate_idx = 0
+
+        self._crate_idx += 1
+        print("Current idx is " + str(self._crate_idx))
+
+        allcrates = list(self.itemcrates.values())
+        acrate = allcrates[self._crate_idx]
+
+        """
+        if self.crate_idx % len(allcrates) == 0:
+            self._crate_idx = 0
+
 
         print("total crates:")
-        print(len(allcrates))
+        print(len(allcrates))"""
 
-        return(acrate)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        return (acrate)

@@ -112,7 +112,8 @@ class MainGUI:
         
     def on_right_crate_button_click(self: Tk):
         print("WHO BE CYCLIN RIGHT THRU CRATES?!")
-
+        b = self.game.cycleRight()
+        self.set_crate_frame(b)
     def on_play_button_click(self: Tk):
         randomItem: LootItem = randomLootItem()
 
