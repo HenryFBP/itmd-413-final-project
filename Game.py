@@ -75,6 +75,8 @@ class Game:
             if item.name == name:
                 return item
 
+        print("No item by '"+name+"' found!")
+
         return None
 
     def logPurchaseKreds(self, kreds, dollars):
