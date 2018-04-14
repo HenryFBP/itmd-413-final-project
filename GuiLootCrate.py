@@ -13,13 +13,14 @@ class GuiLootCrate:
         """
         rf = Frame(parent, bd=2, relief=SUNKEN)
 
+        info = Label(rf, text=f"${crate.cost:.2f} for {crate.capacity} items.")
         name = Label(rf, text=crate.name)
 
         items = GuiLootCrate.crate_items_to_frame(crate, rf)
 
-        items.pack()
-
         name.pack()
+        info.pack()
+        items.pack()
 
         return rf
 
