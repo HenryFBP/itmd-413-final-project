@@ -37,7 +37,7 @@ class MainGUI:
         # Get inventory pane to add stuff to
         self.inventory: Frame = self.builder.get_object('Frame_inventory', master)
 
-        self.Frame_crate: Frame = self.builder.get_object('crate_open',master)
+        self.Frame_crate: Frame = self.builder.get_object('crate_open', master)
 
         # get crate frame display
         self.Frame_crate_display: Frame = self.builder.get_object('crate_open_display', master)
@@ -105,15 +105,13 @@ class MainGUI:
         self.mainwindow.quit()
 
     def on_left_crate_button_click(self: Tk):
-        print("WHO BE CYCLIN LEFT THRU CRATES?!")
         a = self.game.cycleLeft()
         self.set_crate_frame(a)
 
-        
     def on_right_crate_button_click(self: Tk):
-        print("WHO BE CYCLIN RIGHT THRU CRATES?!")
         b = self.game.cycleRight()
         self.set_crate_frame(b)
+
     def on_play_button_click(self: Tk):
         randomItem: LootItem = randomLootItem()
 

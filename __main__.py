@@ -1,13 +1,7 @@
-from pprint import *
+from tkinter import Tk
 
-from pygubu import *
-
-from Game import *
-from GuiLootItem import *
-from LootItem import *
-from guiLib import *
-from GuiLootCrateGraph import *
-from gui_pygubu import *
+from GuiLootCrateGraph import GuiLootCrateGraph
+from gui_pygubu import MainGUI
 
 if __name__ == '__main__':
     root = Tk()
