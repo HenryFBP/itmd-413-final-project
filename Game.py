@@ -1,7 +1,8 @@
 import json
-import time
+from datetime import time
 
-from LootCrate import *
+from LootCrate import LootCrate
+from LootItem import LootItem
 
 
 class Game:
@@ -203,50 +204,42 @@ class Game:
 
         return crates
 
-    def cycleLeft(self):
+    def ncrateidx(self):
+        """Normalize crate index."""
+        if hasattr(self, '_crate_idx'):
 
-        """ Cycles Crates Left and returns the crate"""
-        if not hasattr(self, '_crate_idx') or self._crate_idx is None:
+            if self._crate_idx < 0:
+                self._crate_idx += len(self.itemcrates.values())  # normalize up
+
+            elif self._crate_idx >= len(self.itemcrates.values()) - 1:
+                self._crate_idx -= len(self.itemcrates.values())  # normalize down
+        else:
             self._crate_idx = 0
 
+    def cycleLeft(self):
+        """ Cycles Crates Left and returns the crate"""
+
+        self.ncrateidx()
         self._crate_idx -= 1
+
         print("Current idx is " + str(self._crate_idx))
 
         allcrates = list(self.itemcrates.values())
         acrate = allcrates[self._crate_idx]
 
-        while self._crate_idx < len(allcrates):
-            if (self.crate_idx > len(allcrates)):
-                self._crate_idx = self._crate_idx % len(allcrates)
-            if (self._crate_idx < 0):
-                self._crate_idx+=len(allcrates)
-
         print("total crates:")
         print(len(allcrates))
 
-        return (acrate)
-
+        return acrate
 
     def cycleRight(self):
-
         """ Cycles Crates Left and returns the crate"""
-
-        if not hasattr(self, '_crate_idx') or self._crate_idx is None:
-            self._crate_idx = 0
-
+        self.ncrateidx()
         self._crate_idx += 1
+
         print("Current idx is " + str(self._crate_idx))
 
         allcrates = list(self.itemcrates.values())
         acrate = allcrates[self._crate_idx]
-
-        while self._crate_idx < len(allcrates):
-            if (self.crate_idx > len(allcrates)):
-                self._crate_idx = self._crate_idx % len(allcrates)
-            if (self._crate_idx < 0):
-                self._crate_idx+=len(allcrates)
-
-        print("total crates:")
-        print(len(allcrates))
 
         return (acrate)
