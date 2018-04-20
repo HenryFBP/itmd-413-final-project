@@ -219,7 +219,7 @@ class Game:
             self._crate_idx = 0
 
     def cycleLeft(self):
-        """ Cycles Crates Left and returns the crate"""
+        """Cycles crates left and returns the crate."""
 
         self.ncrateidx()
         self._crate_idx -= 1
@@ -235,7 +235,7 @@ class Game:
         return acrate
 
     def cycleRight(self):
-        """ Cycles Crates Left and returns the crate"""
+        """Cycles crates right and returns the crate."""
         self.ncrateidx()
         self._crate_idx += 1
 
