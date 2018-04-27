@@ -2,7 +2,7 @@
 
 Repo for ITMD 413 Final Project at IIT, Open-Source Programming with Python.
 
-By Larry Jiao and [Henry Post](http://henryfbp.me/).
+By Larry Jiao, Jessica Soto and [Henry Post](http://henryfbp.me/).
 
 # Running
 
